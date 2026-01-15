@@ -163,3 +163,75 @@ ancient_magic_hotspots: Dict[str, List[str]] = {
         "Manor Cape Ancient Magic Hotspot"
     ]
 }
+
+bandit_camp_locations: Dict[str, List[str]] = {
+    "north_ford_bog" : [
+        "North Ford Bandit Camp #1",
+        "North Ford Bandit Camp #2",
+        "North Ford Bandit Camp #3"
+    ],
+    "forbidden_forrest" : [
+        "Forbidden Forrest Bandit Camp #1",
+        "Forbidden Forrest Bandit Camp #2",
+        "Forbidden Forrest Bandit Camp #3",
+        "Forbidden Forrest Bandit Camp #4",
+        "Forbidden Forrest Bandit Camp #5"
+    ],
+    "hogsmeade_valley" : [
+        "Hogsmeade Valley Bandit Camp #1",
+        "Hogsmeade Valley Bandit Camp #2"
+    ],
+    "north_hogwarts" : [
+        "North Hogwarts Bandit Camp #1",
+        "North Hogwarts Bandit Camp #2",
+        "North Hogwarts Bandit Camp #3",
+        "North Hogwarts Bandit Camp #4"
+    ],
+    "hogwarts_valley" : [
+        "Hogwarts Valley Bandit Camp #1",
+        "Hogwarts Valley Bandit Camp #2",
+        "Hogwarts Valley Bandit Camp #3"
+    ],
+    "feldcroft" : [
+        "Feldcroft Region Bandit Camp #1",
+        "Feldcroft Region Bandit Camp #2",
+        "Feldcroft Region Bandit Camp #3",
+        "Feldcroft Region Bandit Camp #4",
+        "Feldcroft Region Bandit Camp #5",
+        "Feldcroft Region Bandit Camp #6",
+        "Feldcroft Region Bandit Camp #7",
+        "Feldcroft Region Bandit Camp #8",
+        "Feldcroft Region Bandit Camp #9"
+    ],
+    "south_sea_bog" : [
+        "South Sea Bandit Camp"
+    ],
+    "poidsear_coast" : [
+        "Poidsear Coast Bandit Camp #1",
+        "Poidsear Coast Bandit Camp #2",
+        "Poidsear Coast Bandit Camp #3",
+        "Poidsear Coast Bandit Camp #4",
+        "Poidsear Coast Bandit Camp #5",
+        "Poidsear Coast Bandit Camp #6"
+    ],
+    "marunweem_lake" : [
+        "Marunweem Lake Bandit Camp #1",
+        "Marunweem Lake Bandit Camp #2",
+        "Marunweem Lake Bandit Camp #3",
+        "Marunweem Lake Bandit Camp #4",
+        "Marunweem Lake Bandit Camp #5"
+    ],
+    "manor_cape" : [
+        "Manor Cape Bandit Camp #1",
+        "Manor Cape Bandit Camp #2"
+    ],
+    "cragcroftshire" : [
+        "Cragcroft Shire Bandit Camp"
+    ],
+    "clagmar_coast" : [
+        "Clagmar Coast Bandit Camp #1",
+        "Clagmar Coast Bandit Camp #2",
+        "Clagmar Coast Bandit Camp #3",
+        "Clagmar Coast Bandit Camp #4"
+    ]
+}
