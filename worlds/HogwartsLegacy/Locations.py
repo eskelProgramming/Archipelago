@@ -70,7 +70,12 @@ forbidden_forrest_locations = [
     "Jackdaw’s Tomb Floo Flame"
 ]
 
-north_ford_bog_locations = []
+north_ford_bog_locations = [
+"Pitt-Upon-Ford Floo Flame",
+"North Ford Bog Floo Flame",
+"San Bakar’s Tower Floo Flame",
+"East North Ford Bog Floo Flame",
+]
 
 hogwarts_valley_locations = [
     "Central Hogwarts Valley Floo Flame",
