@@ -2,11 +2,9 @@ from typing import Dict, List
 
 hogwarts_regions_all: Dict[str, List[str]] = {
     "Menu" : [
-        "Tutorial",
         "Hogwarts Castle",
         "Hogsmeade"
     ],
-    "Tutorial" : [],
     "Hogwarts Castle" : [],
     "Hogsmeade" : [],
     "South Hogwarts Region" : [],
