@@ -394,5 +394,61 @@ vendor_locations: Dict[str, List[str]] = {
         "Spintwitches - Moon Trimmer Broom",
         "Spintwitches - Wind Wisp Broom",
         "Spintwitches - Yew Weaver Broom",
+    ],
+    "j_pippins_potions" : [
+        "J. Pippin's Potions - Focus Potion Recipe",
+        "J. Pippin's Potions - Thunderbrew Potion Recipe",
+        "J. Pippin's Potions - Invisibility Potion Recipe",
+        "J. Pippin's Potions - Maxima Potion Recipe",
+    ],
+    "the_magic_neep" : [
+        "The Magic Neep - Fluxweed Seed",
+        "The Magic Neep - Knotgrass Seed",
+        "The Magic Neep - Mallowsweet Seed",
+        "The Magic Neep - Shrivelfig Seed",
+    ],
+    "dogweed_and_deathcap" : [
+        "Dogweed and Deathcap - Chinese Chomping Cabbage Seed",
+        "Dogweed and Deathcap - Mandrake Seed",
+        "Dogweed and Deathcap - Venomous Tentacula Seed",
+    ],
+    "gladrags_wizardwear" : [
+        "Gladrags Wizardwear - Unidentified Head Item",
+        "Gladrags Wizardwear - Sanguine Mask",
+        "Gladrags Wizardwear - Dark Sun Hat",
+        "Gladrags Wizardwear - Sienna Bloom Scarf",
+        "Gladrags Wizardwear - Illustrious Emerald Silk Robe",
+        "Gladrags Wizardwear - Rugged Fedora",
+        "Gladrags Wizardwear - Tettersall Casual School Uniform",
+        "Gladrags Wizardwear - Capricious Vest School Uniform",
+        "Gladrags Wizardwear - Elegant Vest Uniform",
+        "Gladrags Wizardwear - Steel Blue Robe",
+        "Gladrags Wizardwear - Aristocratic Ensemble",
+        "Gladrags Wizardwear - Spring Ivy Scarf",
+        "Gladrags Wizardwear - Mormaer Robes",
+        "Gladrags Wizardwear - Secret Solver's Tailor Hat",
+        "Gladrags Wizardwear - Black Rivet Gloves",
+        "Gladrags Wizardwear - Distinguished School Robe"
+    ],
+    "edgar_adley" : [
+        "Edgar Adley - Tartan Vest School Uniform",
+        "Edgar Adley - Lace Sorcerer Hat",
+        "Edgar Adley - Rapscallion Garb"
+    ],
+    "arn" : [
+        "Arn - Silver Arrow Broom"
+    ],
+    "priya_treadwell" : [
+        "Priya Treadwell - Family Antique Broom"
+    ],
+    "agnes_coffey" : [
+        "Agnes Coffey - Item #1",
+        "Agnes Coffey - Item #2",
+        "Agnes Coffey - Item #3",
+        "Agnes Coffey - Item #4",
+        "Agnes Coffey - Item #5",
+        "Agnes Coffey - Item #6",
+        "Agnes Coffey - Item #7",
+        "Agnes Coffey - Item #8"
     ]
 }
