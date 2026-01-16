@@ -452,3 +452,44 @@ vendor_locations: Dict[str, List[str]] = {
         "Agnes Coffey - Item #8"
     ]
 }
+
+astronomy_table_locations: Dict[str, List[str]] = {
+    "hogwarts_castle" : [
+        "Hogwarts Castle Astronomy Table - Phoenix"
+    ],
+    "south_hogwarts" : [
+        "South Hogwarts Astronomy Table - Lyra"
+    ],
+    "forbidden_forest" : [
+        "Forbidden Forest Astronomy Table - Draco"
+    ],
+    "north_ford_bog" : [
+        "North Ford Bog Astronomy Table - Centaurus"
+    ],
+    "hogwarts_valley" : [
+        "Hogwarts Valley Astronomy Table - Capricornus",
+        "Hogwarts Valley Astronomy Table - Corvus"
+    ],
+    "hogsmeade_valley" : [
+        "Hogsmeade Valley Astronomy Table - Leo"
+    ],
+    "feldcroft_region" : [
+        "Feldcroft Region Astronomy Table - Horologium",
+        "Feldcroft Region Astronomy Table - Lacerta"
+    ],
+    "poidsear_coast" : [
+        "Poidsear Coast Astronomy Table - Hydra"
+    ],
+    "marunweem_lake" : [
+        "Marunweem Lake Astronomy Table - Canis Major"
+    ],
+    "manor_cape" : [
+        "Manor Cape Astronomy Table - Sagittarius"
+    ],
+    "cragcroftshire" : [
+        "Cragcroftshire Astronomy Table - Cetus"
+    ],
+    "clagmar_coast" : [
+        "Clagmar Coast Astronomy Table - Lupus"
+    ]
+}
