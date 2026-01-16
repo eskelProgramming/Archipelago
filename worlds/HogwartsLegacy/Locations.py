@@ -235,3 +235,12 @@ bandit_camp_locations: Dict[str, List[str]] = {
         "Clagmar Coast Bandit Camp #4"
     ]
 }
+
+battle_arena_locations: Dict[str, List[str]] = {
+    "north_ford_bog" : [
+        "North Fod Bog Battle Arena"
+    ],
+    "feldcroft" : [
+        "Feldcroft Battle Arena"
+    ]
+}
