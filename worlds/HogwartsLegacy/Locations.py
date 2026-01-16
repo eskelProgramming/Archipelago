@@ -3,6 +3,7 @@ from typing import Dict, List
 from BaseClasses import Location
 
 
+
 class HogwartsLegacyLocation(Location):
     game: str = "Hogwarts Legacy"
 
@@ -366,5 +367,32 @@ merlin_trial_locations: Dict[str, List[str]] = {
         "Clagmar Coast Merlin Trial #3",
         "Clagmar Coast Merlin Trial #4",
         "Clagmar Coast Merlin Trial #5"
+    ]
+}
+
+vendor_locations: Dict[str, List[str]] = {
+    "tomes_and_scrolls" : [
+        "Tomes and Scrolls - Beast Feeder Spellcraft",
+        "Tomes and Scrolls - Beast Toybox Spellcraft",
+        "Tomes and Scrolls - Chopping Station Spellcraft",
+        "Tomes and Scrolls - Dung Composter Spellcraft",
+        "Tomes and Scrolls - Hopping Pot Spellcraft",
+        "Tomes and Scrolls - Material Refiner Spellcraft",
+        "Tomes and Scrolls - Potting Table with One Large Pot Spellcraft",
+        "Tomes and Scrolls - Potting Table with Two Large Pots Spellcraft",
+        "Tomes and Scrolls - Potting Table with One Medium Pot Spellcraft",
+        "Tomes and Scrolls - Potting Table with Two Medium Pots Spellcraft",
+        "Tomes and Scrolls - Potting Table with 3 Medium Pots Spellcraft",
+        "Tomes and Scrolls - Potting Table with Three Small Pots Spellcraft",
+        "Tomes and Scrolls - Potting Table with Five Small Pots Spellcraft",
+        "Tomes and Scrolls - Medium Potions Station Spellcraft",
+        "Tomes and Scrolls - T-Shaped Potions Station Spellcraft"
+    ],
+    "spintwitches_sporting_needs" : [
+        "Spintwitches - Ember Dash Broom",
+        "Spintwitches - Hogwarts House Broom",
+        "Spintwitches - Moon Trimmer Broom",
+        "Spintwitches - Wind Wisp Broom",
+        "Spintwitches - Yew Weaver Broom",
     ]
 }
