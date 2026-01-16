@@ -1127,3 +1127,151 @@ landing_platform_locations: Dict[str, List[str]] = {
         "Clagmar Coast Landing Platform"
     ]
 }
+
+quest_locations: Dict[str, List[str]] = {
+    "main": [
+        "Main Quest - The Path To Hogwarts"
+        "Main Quest - Welcome To Hogwarts"
+        "Main Quest - Charms Class"
+        "Main Quest - Defense Against the Dark Arts Class"
+        "Main Quest - Weasley After Class"
+        "Main Quest - Welcome to Hogsmeade"
+        "Main Quest - The Locket's Secret"
+        "Main Quest - Secrets of the Restricted Section"
+        "Main Quest - Tomes and Tribulations"
+        "Main Quest - Herbology Class"
+        "Main Quest - Potions Class"
+        "Main Quest - The Girl From Uagadou"
+        "Main Quest - Trials Of Merlin"
+        "Main Quest - Richard Jackdaw's Ghost (House Quest)"
+        "Main Quest - Jackdaw's Rest"
+        "Main Quest - Flying Class"
+        "Main Quest - The Room of Requirement"
+        "Main Quest - In the Shadow of the Undercroft"
+        "Main Quest - The Map Chamber"
+        "Main Quest - Percival Rackham's Trial"
+        "Main Quest - Beasts Class"
+        "Main Quest - The Caretaker's Lunar Lament"
+        "Main Quest - The Helm of Urtkot"
+        "Main Quest - The Elf, The Nab-Sack, and the Loom"
+        "Main Quest - In the Shadow of the Estate"
+        "Main Quest - Astronomy Class"
+        "Main Quest - The High Keep"
+        "Main Quest - Back on the Path"
+        "Main Quest - Charles Rookwood's Trial"
+        "Main Quest - Fire and Vice"
+        "Main Quest - Professor Weasley's Assignment"
+        "Main Quest - It's All Gobbledegook"
+        "Main Quest - In the Shadow of the Mine"
+        "Main Quest - The Headmistress Speaks"
+        "Main Quest - The Polyjuice Plot"
+        "Main Quest - Niamh Fitzgerald's Trial"
+        "Main Quest - In the Shadow of the Mountain"
+        "Main Quest - Lodgok's Loyalty"
+        "Main Quest - San Bakar's Trial"
+        "Main Quest - Wand Mastery"
+        "Main Quest - The Final Repository"
+    ],
+    "side" : [
+        "Side Quest - A Poacher's House Call",
+        "Side Quest - Acting on Instinct",
+        "Side Quest - All's Well That Ends Bell",
+        "Side Quest - 'Beeting' A Curse",
+        "Side Quest - Cache In The Castle",
+        "Side Quest - Crossed Wands: Round 1",
+        "Side Quest - Crossed Wands: Round 2",
+        "Side Quest - Crossed Wands: Round 3",
+        "Side Quest - 'Dissending' For Sweets",
+        "Side Quest - Finding Focus",
+        "Side Quest - Flying Off The Shelves",
+        "Side Quest - Foal Of The Dead",
+        "Side Quest - Ghost of Our Love",
+        "Side Quest - Gobs Of Gobstones",
+        "Side Quest - History Of Magic Class",
+        "Side Quest - Interior Decorating",
+        "Side Quest - Like A Moth To A Frame",
+        "Side Quest - Madam Kogawa's Assignment 1",
+        "Side Quest - Madam Kogawa's Assignment 2",
+        "Side Quest - 'Mer-Ky' Depths",
+        "Side Quest - Phoenix Rising",
+        "Side Quest - Portrait In A Pickle",
+        "Side Quest - Professor Garlick’s Assignment 1",
+        "Side Quest - Professor Garlick’s Assignment 2",
+        "Side Quest - Professor Hecat's Assignment 2",
+        "Side Quest - Professor Howin's Assignment",
+        "Side Quest - Professor Onai's Assignment",
+        "Side Quest - Professor Sharp's Assignment 1",
+        "Side Quest - Professor Sharp's Assignment 2",
+        "Side Quest - Spell Combination Practice 2",
+        "Side Quest - Summoner's Court: Match 1",
+        "Side Quest - Summoner's Court: Match 2",
+        "Side Quest - Summoner's Court: Match 3",
+        "Side Quest - Summoner's Court: Match 4",
+        "Side Quest - Summoner's Court: Match 5",
+        "Side Quest - The Daedalian Keys",
+        "Side Quest - The Hall Of Herodiana",
+        "Side Quest - The Man Behind The Moons",
+        "Side Quest - The Plight Of The House-Elf",
+        "Side Quest - The Tale Of Rowland Oakes",
+        "Side Quest - Venomous Valour",
+        "Side Quest - A Demanding Delivery",
+        "Side Quest - A Friend In Deed",
+        "Side Quest - Flight Test",
+        "Side Quest - Follow The Butterflies",
+        "Side Quest - Minding Your Own Business",
+        "Side Quest - Spot Removal",
+        "Side Quest - Sweeping The Competition",
+        "Side Quest - Take The Biscuit",
+        "Side Quest - Tangled Web",
+        "Side Quest - The Sky Is The Limit",
+        "Side Quest - The Unique Unicorn",
+        "Side Quest - Venomous Revenge",
+        "Side Quest - Sacking Selwyn",
+        "Side Quest - E-Vase-Ive Manoeuvre",
+        "Side Quest - A Thief in the Night",
+        "Side Quest - It's In The Stars",
+        "Side Quest - Breaking Camp",
+        "Side Quest - Brother's Keeper",
+        "Side Quest - Troll Control",
+        "Side Quest - Cursed Tomb Treasure",
+        "Side Quest - Rescuing Rococo",
+        "Side Quest - Solved by the Bell",
+        "Side Quest - Birds of a Feather",
+        "Side Quest - The Hippogriff Marks The Spot",
+        "Side Quest - Absconder Encounter",
+        "Side Quest - Carted Away",
+        "Side Quest - The Lost Astrolabe",
+        "Side Quest - Well, Well, Well"
+    ],
+    "sebastian": [
+        "Sebastian Quest - In the Shadow of the Bloodline",
+        "Sebastian Quest - In the Shadow of the Study",
+        "Sebastian Quest - In the Shadow of Discovery",
+        "Sebastian Quest - In the Shadow of Time",
+        "Sebastian Quest - In the Shadow of Distance",
+        "Sebastian Quest - In the Shadow of Hope",
+        "Sebastian Quest - In the Shadow of the Relic",
+        "Sebastian Quest - In the Shadow of Fate",
+        "Sebastian Quest - In the Shadow of Revelations",
+        "Sebastian Quest - In the Shadow of Friendship",
+    ],
+    "poppy": [
+        "Poppy Quest - A Dragon Debrief",
+        "Poppy Quest - Poached Egg",
+        "Poppy Quest - A Poacher's House Call",
+        "Poppy Quest - Surprise Meeting",
+        "Poppy Quest - The Centaur and the Stone",
+        "Poppy Quest - It's in the Stars",
+        "Poppy Quest - A Bird in the Hand",
+        "Poppy Quest - Poppy Blooms",
+    ],
+    "natsai": [
+        "Natsai Quest - The Lost Child"
+        "Natsai Quest - Mum's the Word"
+        "Natsai Quest - A Basis for Blackmail"
+        "Natsai Quest - Grief and Vengeance"
+        "Natsai Quest - Finding Focus"
+        "Natsai Quest - Harlow's Last Stand"
+        "Natsai Quest - Acting on Instinct"
+    ]
+}
