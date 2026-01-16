@@ -1082,3 +1082,48 @@ dragon_brazier_page_locations: Dict[str, List[str]] = {
         "Hogwarts Castle Dragon Brazier - South Wing - Gryffindor Tower"
     ]
 }
+
+landing_platform_locations: Dict[str, List[str]] = {
+    "north_ford_bog": [
+        "North Ford Bog Landing Platform"
+    ],
+    "hogsmeade_valley": [
+        "Hogsmeade Valley Landing Platform #1",
+        "Hogsmeade Valley Landing Platform #2"
+    ],
+    "north_hogwarts": [
+        "North Hogwarts Landing Platform #1",
+        "North Hogwarts Landing Platform #2"
+    ],
+    "south_hogwarts": [
+        "South Hogwarts Landing Platform"
+    ],
+    "hogwarts_valley": [
+        "Hogwarts Valley Landing Platform #1",
+        "Hogwarts Valley Landing Platform #2",
+        "Hogwarts Valley Landing Platform #3"
+    ],
+    "feldcroft": [
+        "Feldcroft Landing Platform #1",
+        "Feldcroft Landing Platform #2",
+        "Feldcroft Landing Platform #3",
+        "Feldcroft Landing Platform #4"
+    ],
+    "marunweem_lake": [
+        "Marunweem Lake Landing Platform #1",
+        "Marunweem Lake Landing Platform #2"
+    ],
+    "poidsear_coast": [
+        "Poidsear Coast Landing Platform"
+    ],
+    "manor_cape": [
+        "Manor Cape Landing Platform #1",
+        "Manor Cape Landing Platform #2"
+    ],
+    "cragcroftshire": [
+        "CragcroftShire Landing Platform"
+    ],
+    "clagmar_coast": [
+        "Clagmar Coast Landing Platform"
+    ]
+}
