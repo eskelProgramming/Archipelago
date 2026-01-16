@@ -742,3 +742,59 @@ collection_chest_locations: Dict[str, List[str]] = {
         "Clagmar Coast Chest #5"
     ]
 }
+
+demiguise_statue_locations: Dict[str, List[str]] = {
+    "hogwarts_castle": [
+        "Hogwarts Castle Demiguise Statue - Grand Staircase",
+        "Hogwarts Castle Demiguise Statue - Hospital Wing",
+        "Hogwarts Castle Demiguise Statue - Prefect's Bathroom",
+        "Hogwarts Castle Demiguise Statue - Professor Fig's Office",
+        "Hogwarts Castle Demiguise Statue - Divination Classroom",
+        "Hogwarts Castle Demiguise Statue - Restricted Section Library",
+        "Hogwarts Castle Demiguise Statue - Great Hall Room",
+        "Hogwarts Castle Demiguise Statue - South Wing Bathroom",
+        "Hogwarts Castle Demiguise Statue - North Hall Dungeons",
+        "Hogwarts Castle Demiguise Statue - Bell Tower Ramparts",
+        "Hogwarts Castle Demiguise Statue - Long Gallery",
+        "Hogwarts Castle Demiguise Statue - Defense Against the Dark Arts Tower",
+        "Hogwarts Castle Demiguise Statue - Beasts Classroom",
+    ],
+    "hogsmeade_village": [
+        "Hogsmeade Demiguise Statue - Tomes and Scrolls",
+        "Hogsmeade Demiguise Statue - Hog's Head Inn",
+        "Hogsmeade Demiguise Statue - Dervish and Bangs",
+        "Hogsmeade Demiguise Statue - Three Broomsticks",
+        "Hogsmeade Demiguise Statue - Spire Street House",
+        "Hogsmeade Demiguise Statue - Northern River's Edge Home",
+        "Hogsmeade Demiguise Statue - Easternmost House",
+        "Hogsmeade Demiguise Statue - Lower High Street",
+        "Hogsmeade Demiguise Statue - Western River's Edge Home",
+    ],
+    "south_hogwarts": [
+        "Demiguise Statue - South Hogsfield",
+        "Demiguise Statue - Aranshire"
+    ],
+    "hogsmeade_valley": [
+        "Demiguise Statue - Upper Hogsfield"
+    ],
+    "north_ford_bog": [
+        "Demiguise Statue - Pitt-Upon-Ford"
+    ],
+    "hogwarts_valley": [
+        "Demiguise Statue - Brocburrow",
+        "Demiguise Statue - Keenbridge"
+    ],
+    "feldcroft": [
+        "Demiguise Statue - Irondale",
+        "Demiguise Statue - Feldcroft Village"
+    ],
+    "marunweem_lake": [
+        "Demiguise Statue - Mariweem Hamlet"
+    ],
+    "manor_cape": [
+        "Demiguise Statue - Bainburgh"
+    ],
+    "cragcrostshire": [
+        "Demiguise Statue - Cragcroft"
+    ]
+}
