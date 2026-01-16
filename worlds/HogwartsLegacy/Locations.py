@@ -560,3 +560,185 @@ broom_trial_locations: Dict[str, List[str]] = {
         "South Coast Broom Flight Trial"
     ]
 }
+
+collection_chest_locations: Dict[str, List[str]] = {
+    "hogwarts_castle": [
+        "Hogwarts Castle - Astronomy Wing Chest #1",
+        "Hogwarts Castle - Astronomy Wing Chest #2",
+        "Hogwarts Castle - Astronomy Wing Chest #3",
+        "Hogwarts Castle - Astronomy Wing Chest #4",
+        "Hogwarts Castle - Astronomy Wing Chest #5",
+        "Hogwarts Castle - Bell Tower Chest #1",
+        "Hogwarts Castle - Bell Tower Chest #2",
+        "Hogwarts Castle - Bell Tower Chest #3",
+        "Hogwarts Castle - Bell Tower Chest #4",
+        "Hogwarts Castle - Bell Tower Chest #5",
+        "Hogwarts Castle - Bell Tower Chest #6",
+        "Hogwarts Castle - Grand Staircase Chest #1",
+        "Hogwarts Castle - Grand Staircase Chest #2",
+        "Hogwarts Castle - Grand Staircase Chest #3",
+        "Hogwarts Castle - Grand Staircase Chest #4",
+        "Hogwarts Castle - Grand Staircase Chest #5",
+        "Hogwarts Castle - Grand Staircase Chest #6",
+        "Hogwarts Castle - Grand Staircase Chest #7",
+        "Hogwarts Castle - Great Hall Chest #1",
+        "Hogwarts Castle - Great Hall Chest #2",
+        "Hogwarts Castle - Great Hall Chest #3",
+        "Hogwarts Castle - Library Annex Chest #1",
+        "Hogwarts Castle - Library Annex Chest #2",
+        "Hogwarts Castle - Library Annex Chest #3",
+        "Hogwarts Castle - Library Annex Chest #4",
+        "Hogwarts Castle - Library Annex Chest #5",
+        "Hogwarts Castle - Library Annex Chest #6",
+        "Hogwarts Castle - Library Annex Chest #7",
+        "Hogwarts Castle - Library Annex Chest #8",
+        "Hogwarts Castle - Library Annex Chest #9",
+        "Hogwarts Castle - South Wing Chest #1",
+        "Hogwarts Castle - South Wing Chest #2",
+        "Hogwarts Castle - South Wing Chest #3",
+        "Hogwarts Castle - South Wing Chest #4",
+        "Hogwarts Castle - South Wing Chest #5"
+    ],
+    "hogsmeade_village": [
+        "Hogsmeade Village Chest #1",
+        "Hogsmeade Village Chest #2",
+        "Hogsmeade Village Chest #3",
+        "Hogsmeade Village Chest #4",
+        "Hogsmeade Village Chest #5"
+    ],
+    "south_hogwarts": [
+        "South Hogwarts Chest #1",
+        "South Hogwarts Chest #2",
+        "South Hogwarts Chest #3",
+        "South Hogwarts Chest #4",
+        "South Hogwarts Chest #5",
+        "South Hogwarts Chest #6",
+        "South Hogwarts Chest #7",
+        "South Hogwarts Chest #8",
+        "South Hogwarts Chest #9"
+    ],
+    "hogsmeade_valley": [
+        "Hogsmeade Valley Chest #1",
+        "Hogsmeade Valley Chest #2",
+        "Hogsmeade Valley Chest #3",
+        "Hogsmeade Valley Chest #4",
+        "Hogsmeade Valley Chest #5",
+        "Hogsmeade Valley Chest #6",
+        "Hogsmeade Valley Chest #7",
+        "Hogsmeade Valley Chest #8"
+    ],
+    "north_hogwarts": [
+        "North Hogwarts Chest #1",
+        "North Hogwarts Chest #2",
+        "North Hogwarts Chest #3",
+        "North Hogwarts Chest #4",
+        "North Hogwarts Chest #5",
+        "North Hogwarts Chest #6",
+        "North Hogwarts Chest #7"
+    ],
+    "north_ford_bog": [
+        "North Ford Bog Chest #1",
+        "North Ford Bog Chest #2",
+        "North Ford Bog Chest #3",
+        "North Ford Bog Chest #4",
+        "North Ford Bog Chest #5",
+        "North Ford Bog Chest #6",
+        "North Ford Bog Chest #7"
+    ],
+    "hogwarts_valley": [
+        "Hogwarts Valley Chest #1",
+        "Hogwarts Valley Chest #2",
+        "Hogwarts Valley Chest #3",
+        "Hogwarts Valley Chest #4",
+        "Hogwarts Valley Chest #5",
+        "Hogwarts Valley Chest #6",
+        "Hogwarts Valley Chest #7",
+        "Hogwarts Valley Chest #8",
+        "Hogwarts Valley Chest #9",
+        "Hogwarts Valley Chest #10",
+        "Hogwarts Valley Chest #11",
+        "Hogwarts Valley Chest #12",
+        "Hogwarts Valley Chest #13",
+        "Hogwarts Valley Chest #14",
+        "Hogwarts Valley Chest #15"
+    ],
+    "feldcroft": [
+        "Feldcroft Chest #1",
+        "Feldcroft Chest #2",
+        "Feldcroft Chest #3",
+        "Feldcroft Chest #4",
+        "Feldcroft Chest #5",
+        "Feldcroft Chest #6",
+        "Feldcroft Chest #7",
+        "Feldcroft Chest #8",
+        "Feldcroft Chest #9",
+        "Feldcroft Chest #10",
+        "Feldcroft Chest #11",
+        "Feldcroft Chest #12",
+        "Feldcroft Chest #13",
+        "Feldcroft Chest #14",
+        "Feldcroft Chest #15",
+        "Feldcroft Chest #16",
+        "Feldcroft Chest #17",
+        "Feldcroft Chest #18",
+        "Feldcroft Chest #19",
+        "Feldcroft Chest #20",
+        "Feldcroft Chest #21",
+        "Feldcroft Chest #22"
+    ],
+    "forbidden_forrest": [
+        "Forbidden Forrest Chest #1",
+        "Forbidden Forrest Chest #2",
+        "Forbidden Forrest Chest #3",
+        "Forbidden Forrest Chest #4",
+        "Forbidden Forrest Chest #5",
+        "Forbidden Forrest Chest #6"
+    ],
+    "south_sea_bog": [
+        "South Sea Bog Chest"
+    ],
+    "coastal_cavern": [
+        "Coastal Cavern Chest"
+    ],
+    "poidsear_coast": [
+        "Poidsear Coast Chest #1",
+        "Poidsear Coast Chest #2",
+        "Poidsear Coast Chest #3",
+        "Poidsear Coast Chest #4",
+        "Poidsear Coast Chest #5",
+        "Poidsear Coast Chest #6",
+        "Poidsear Coast Chest #7",
+        "Poidsear Coast Chest #8"
+    ],
+    "marunweem_lake":[
+        "Marunweem Lake Chest #1",
+        "Marunweem Lake Chest #2",
+        "Marunweem Lake Chest #3",
+        "Marunweem Lake Chest #4",
+        "Marunweem Lake Chest #5",
+        "Marunweem Lake Chest #6",
+        "Marunweem Lake Chest #7",
+        "Marunweem Lake Chest #8",
+        "Marunweem Lake Chest #9",
+        "Marunweem Lake Chest #10",
+        "Marunweem Lake Chest #11",
+        "Marunweem Lake Chest #12",
+        "Marunweem Lake Chest #13",
+        "Marunweem Lake Chest #14",
+        "Marunweem Lake Chest #15"
+    ],
+    "cragcroftshire": [
+        "Cragcroftshire Chest #1",
+        "Cragcroftshire Chest #2",
+        "Cragcroftshire Chest #3",
+        "Cragcroftshire Chest #4",
+        "Cragcroftshire Chest #5"
+    ],
+    "clagmar_coast": [
+        "Clagmar Coast Chest #1",
+        "Clagmar Coast Chest #2",
+        "Clagmar Coast Chest #3",
+        "Clagmar Coast Chest #4",
+        "Clagmar Coast Chest #5"
+    ]
+}
