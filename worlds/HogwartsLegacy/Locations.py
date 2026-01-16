@@ -552,3 +552,11 @@ balloon_locations: Dict[str, List[str]] = {
         "Clagmar Coast Balloon Cluster"
     ]
 }
+
+broom_trial_locations: Dict[str, List[str]] = {
+    "broom_trials": [
+        "Quidditch Pitch Broom Flight Trial",
+        "Irondale Broom Flight Trial",
+        "South Coast Broom Flight Trial"
+    ]
+}
