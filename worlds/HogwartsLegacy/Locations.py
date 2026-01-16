@@ -244,3 +244,127 @@ battle_arena_locations: Dict[str, List[str]] = {
         "Feldcroft Battle Arena"
     ]
 }
+
+merlin_trial_locations: Dict[str, List[str]] = {
+    "north_ford_bog" : [
+        "North Ford Bog Merlin Trial # 1",
+        "North Ford Bog Merlin Trial # 2",
+        "North Ford Bog Merlin Trial # 3",
+        "North Ford Bog Merlin Trial # 4"
+    ],
+    "forbidden_forest" : [
+        "Forbidden Forest Merlin Trial #1",
+        "Forbidden Forest Merlin Trial #2",
+        "Forbidden Forest Merlin Trial #3"
+    ],
+    "hogsmeade_valley" : [
+        "Hogsmeade Valley Merlin Trial #1",
+        "Hogsmeade Valley Merlin Trial #2",
+        "Hogsmeade Valley Merlin Trial #3",
+        "Hogsmeade Valley Merlin Trial #4",
+        "Hogsmeade Valley Merlin Trial #5"
+    ],
+    "north_hogwarts" : [
+        "North Hogwarts Merlin Trial #1",
+        "North Hogwarts Merlin Trial #2",
+        "North Hogwarts Merlin Trial #3",
+        "North Hogwarts Merlin Trial #4",
+        "North Hogwarts Merlin Trial #5"
+    ],
+    "south-hogwarts" : [
+        "South Hogwarts Merlin Trial #1",
+        "South Hogwarts Merlin Trial #2",
+        "South Hogwarts Merlin Trial #3",
+        "South Hogwarts Merlin Trial #4",
+        "South Hogwarts Merlin Trial #5",
+        "South Hogwarts Merlin Trial #6",
+        "South Hogwarts Merlin Trial #7",
+        "South Hogwarts Merlin Trial #8",
+        "South Hogwarts Merlin Trial #9",
+        "South Hogwarts Merlin Trial #10",
+        "South Hogwarts Merlin Trial #11",
+        "South Hogwarts Merlin Trial #12",
+        "South Hogwarts Merlin Trial #13",
+        "South Hogwarts Merlin Trial #14",
+        "South Hogwarts Merlin Trial #15"
+    ],
+    "hogwarts" : [
+        "Hogwarts Merlin Trial #1",
+        "Hogwarts Merlin Trial #2",
+        "Hogwarts Merlin Trial #3",
+        "Hogwarts Merlin Trial #4",
+        "Hogwarts Merlin Trial #5",
+        "Hogwarts Merlin Trial #6",
+        "Hogwarts Merlin Trial #7",
+        "Hogwarts Merlin Trial #8",
+        "Hogwarts Merlin Trial #9",
+        "Hogwarts Merlin Trial #10",
+        "Hogwarts Merlin Trial #11",
+        "Hogwarts Merlin Trial #12",
+        "Hogwarts Merlin Trial #13",
+        "Hogwarts Merlin Trial #14",
+        "Hogwarts Merlin Trial #15",
+        "Hogwarts Merlin Trial #16"
+    ],
+    "feldcroft" : [
+        "Feldcroft Merlin Trial #1",
+        "Feldcroft Merlin Trial #2",
+        "Feldcroft Merlin Trial #3",
+        "Feldcroft Merlin Trial #4",
+        "Feldcroft Merlin Trial #5",
+        "Feldcroft Merlin Trial #6",
+        "Feldcroft Merlin Trial #7",
+        "Feldcroft Merlin Trial #8",
+        "Feldcroft Merlin Trial #9",
+        "Feldcroft Merlin Trial #10",
+        "Feldcroft Merlin Trial #11",
+        "Feldcroft Merlin Trial #12",
+        "Feldcroft Merlin Trial #13",
+        "Feldcroft Merlin Trial #14",
+        "Feldcroft Merlin Trial #15",
+        "Feldcroft Merlin Trial #16"
+    ],
+    "south_sea" : [
+        "South Sea Merlin Trial #1",
+        "South Sea Merlin Trial #2"
+    ],
+    "poidsear" : [
+        "Poidsear Merlin Trial #1",
+        "Poidsear Merlin Trial #2",
+        "Poidsear Merlin Trial #3",
+        "Poidsear Merlin Trial #4",
+        "Poidsear Merlin Trial #5",
+        "Poidsear Merlin Trial #6",
+        "Poidsear Merlin Trial #7",
+        "Poidsear Merlin Trial #8",
+        "Poidsear Merlin Trial #9",
+        "Poidsear Merlin Trial #10"
+    ],
+    "marunweem_lake" : [
+        "Marunweem Lakes Merlin Trial #1",
+        "Marunweem Lakes Merlin Trial #2",
+        "Marunweem Lakes Merlin Trial #3",
+        "Marunweem Lakes Merlin Trial #4"
+    ],
+    "manor_cape" : [
+        "Manor Capes Merlin Trial #1",
+        "Manor Capes Merlin Trial #2",
+        "Manor Capes Merlin Trial #3",
+        "Manor Capes Merlin Trial #4",
+        "Manor Capes Merlin Trial #5"
+    ],
+    "cragcroftshire" : [
+        "Cragcroftshires Merlin Trial #1",
+        "Cragcroftshires Merlin Trial #2",
+        "Cragcroftshires Merlin Trial #3",
+        "Cragcroftshires Merlin Trial #4",
+        "Cragcroftshires Merlin Trial #5"
+    ],
+    "clagmar_coast" : [
+        "Clagmar Coast Merlin Trial #1",
+        "Clagmar Coast Merlin Trial #2",
+        "Clagmar Coast Merlin Trial #3",
+        "Clagmar Coast Merlin Trial #4",
+        "Clagmar Coast Merlin Trial #5"
+    ]
+}
