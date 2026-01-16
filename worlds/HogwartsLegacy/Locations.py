@@ -798,3 +798,287 @@ demiguise_statue_locations: Dict[str, List[str]] = {
         "Demiguise Statue - Cragcroft"
     ]
 }
+
+revelio_page_locations: Dict[str, List[str]] = {
+    "hogwarts_castle": [
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Tapestry of Barnabas the Barmy",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Astronomy Telescope",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Partial Transfiguration",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Portrait of Baruffio",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Augurey Skeleton",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Boggart Closet",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Dark Tower Cell",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Herbridean Black Skeleton",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Painting of Illyius",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Serpentine Beast Window",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Alchemy Class",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Wyvern Fountain",
+        "Hogwarts Castle Revelio Page - Astronomy Wing - Pungent Passage",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Broken Broom",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Flattened Armour",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Goblin Artefact",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Three Sisters Bells",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Scorch Marks",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Grimbald Weft",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Frog Choir",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Waving Knight",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - History of Magic Windows",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Wooden Cat",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Urn of Ashes",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Bloody Meat",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Caged Bathtub",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Glumbumbles",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Castle Ramparts",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Hogwarts Owls",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Quidditch Pitch",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - The Old Librarian",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Important Muggle Artefact",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Sleeping Dragon Statue",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Sphinx Statue",
+        "Hogwarts Castle Revelio Page - Bell Tower Wing - Werewolf Saga Tapestries",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Salazar Slytherin's Scriptorium",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Honeydukes Passageway",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Quill of Acceptance and Book of Admittance",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Centaur Armour",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Moving Staircase",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Headmaster's Office Gargoyle",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Goblet of Fire Casket",
+        "Hogwarts Castle Revelio Page - Grand Staircase - House-Elf Armour",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Sleeping Portraits",
+        "Hogwarts Castle Revelio Page - Grand Staircase - The Sorting Hat",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Troll Armour",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Trophy Room",
+        "Hogwarts Castle Revelio Page - Grand Staircase - The Hogwarts Architect",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Hufflepuff Barrels",
+        "Hogwarts Castle Revelio Page - Grand Staircase - House-Elf Recipe Book",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Ravenclaw Bust",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Ravenclaw Doorknocker",
+        "Hogwarts Castle Revelio Page - Grand Staircase - Kelpie Statue",
+        "Hogwarts Castle Revelio Page - Great Hall - Black Lake",
+        "Hogwarts Castle Revelio Page - Great Hall - Underground Harbour",
+        "Hogwarts Castle Revelio Page - Great Hall - The Great Hall Ceiling",
+        "Hogwarts Castle Revelio Page - Great Hall - The Yawning Gargoyle",
+        "Hogwarts Castle Revelio Page - Great Hall - The Hogwarts Crest",
+        "Hogwarts Castle Revelio Page - Great Hall - House Point Hourglasses",
+        "Hogwarts Castle Revelio Page - Great Hall - Owl Lectern",
+        "Hogwarts Castle Revelio Page - Great Hall - Kitchen Tables",
+        "Hogwarts Castle Revelio Page - Great Hall - Pear Portrait",
+        "Hogwarts Castle Revelio Page - Great Hall - House-Elf Living Quarters",
+        "Hogwarts Castle Revelio Page - Great Hall - Deathday Party Room",
+        "Hogwarts Castle Revelio Page - Great Hall - Slytherin's Sink",
+        "Hogwarts Castle Revelio Page - Great Hall - Detention Chamber",
+        "Hogwarts Castle Revelio Page - Great Hall - Headless Hunt Tapestry",
+        "Hogwarts Castle Revelio Page - Library Annex - Arithmancy Classroom",
+        "Hogwarts Castle Revelio Page - Library Annex - Central Hall Fountain",
+        "Hogwarts Castle Revelio Page - Library Annex - Professor Sharp's Auror Badge",
+        "Hogwarts Castle Revelio Page - Library Annex - Gorgon Portrait",
+        "Hogwarts Castle Revelio Page - Library Annex - Greenhouse Tree",
+        "Hogwarts Castle Revelio Page - Library Annex - Dirigible Plums",
+        "Hogwarts Castle Revelio Page - Library Annex - Statue of Gregory the Smarmy",
+        "Hogwarts Castle Revelio Page - Library Annex - Enchanted Books",
+        "Hogwarts Castle Revelio Page - Library Annex - Palmistry Model",
+        "Hogwarts Castle Revelio Page - Library Annex - Book on Intermediate Transfiguration",
+        "Hogwarts Castle Revelio Page - Library Annex - Portrait of Sir Cadogan",
+        "Hogwarts Castle Revelio Page - South Wing - Clock Mechanics",
+        "Hogwarts Castle Revelio Page - South Wing - The Well of Four Beasts",
+        "Hogwarts Castle Revelio Page - South Wing - Haunted Toilets",
+        "Hogwarts Castle Revelio Page - South Wing - Map of Argyllshire",
+        "Hogwarts Castle Revelio Page - South Wing - Boris the Bewildered",
+        "Hogwarts Castle Revelio Page - South Wing - Lachlan the Lanky",
+        "Hogwarts Castle Revelio Page - South Wing - Adventure Novel Set",
+        "Hogwarts Castle Revelio Page - South Wing - Prefect's Bathroom",
+        "Hogwarts Castle Revelio Page - South Wing - Jewel-Encrusted Tortoise Shell",
+        "Hogwarts Castle Revelio Page - South Wing - Unicorn Fountain",
+        "Hogwarts Castle Revelio Page - South Wing - Fat Lady Portrait",
+        "Hogwarts Castle Revelio Page - South Hogwarts- Groundskeeper's Tools"
+    ],
+    "hogsmeade_village": [
+        "Hogsmeade Village Revelio Page - Three Broomsticks",
+        "Hogsmeade Village Revelio Page - Three Broomsticks Private Room",
+        "Hogsmeade Village Revelio Page - Butterbeer Barrels",
+        "Hogsmeade Village Revelio Page - Ceridwen's Precarious Caldrons",
+        "Hogsmeade Village Revelio Page - Sneakoscope",
+        "Hogsmeade Village Revelio Page - The Dogweed and Deathcap Tree",
+        "Hogsmeade Village Revelio Page - Hogsmeade Community Garden",
+        "Hogsmeade Village Revelio Page - Gladrags Mannequin",
+        "Hogsmeade Village Revelio Page - Gladrags Wizardwear",
+        "Hogsmeade Village Revelio Page - Hog's Head Docks",
+        "Hogsmeade Village Revelio Page - Mounted Hog's Head",
+        "Hogsmeade Village Revelio Page - Exploding Bonbons",
+        "Hogsmeade Village Revelio Page - Honeydukes",
+        "Hogsmeade Village Revelio Page - Fizzing Whizzbees",
+        "Hogsmeade Village Revelio Page - The Magic Neep Cart",
+        "Hogsmeade Village Revelio Page - Abandoned Shop",
+        "Hogsmeade Village Revelio Page - Ollivanders Wand Shop",
+        "Hogsmeade Village Revelio Page - J. Pippin's Potions",
+        "Hogsmeade Village Revelio Page - Hengist of Woodcroft",
+        "Hogsmeade Village Revelio Page - Magical Mail",
+        "Hogsmeade Village Revelio Page - Scivenshaft Cats",
+        "Hogsmeade Village Revelio Page - Spintwitches Sporting Needs",
+        "Hogsmeade Village Revelio Page - Tea Shop Decor",
+        "Hogsmeade Village Revelio Page - Enchanted Staircase",
+        "Hogsmeade Village Revelio Page - Brood and Peck",
+        "Hogsmeade Village Revelio Page - Hogsmeade",
+        "Hogsmeade Village Revelio Page - Water Well",
+        "Hogsmeade Village Revelio Page - Dungbomb",
+        "Hogsmeade Village Revelio Page - Frog Spawn Soap",
+        "Hogsmeade Village Revelio Page - Zonko's Joke Shop"
+    ],
+    "south_hogwarts": [
+        "South Hogwarts Revelio Page - Spider Parts",
+        "South Hogwarts Revelio Page - Hogsmeade Station Ticket office"
+    ],
+    "hogsmeade_valley": [
+        "Hogsmeade Valley Revelio Page - Beehives",
+        "Hogsmeade Valley Revelio Page - Chocolate Frogs",
+        "Hogsmeade Valley Revelio Page - Pumpkin Fizz",
+        "Hogsmeade Valley Revelio Page - Squib Cottage"
+    ],
+    "north_hogwarts": [
+        "North Hogwarts Revelio Page- Alihotsy Fudge",
+    ],
+    "north_ford_bog": [
+        "North Ford Bog Revelio Page - Antique Horn",
+        "North Ford Bog Revelio Page - Spider Sign"
+    ],
+    "hogwarts_valley" : [
+        "Hogwarts Valley Revelio Page - Lace Doily",
+        "Hogwarts Valley Revelio Page - Doxy Egg",
+        "Hogwarts Valley Revelio Page - Ginger Root",
+        "Hogwarts Valley Revelio Page - Hebridean Black Scale",
+        "Hogwarts Valley Revelio Page - Murtlap Tentacles",
+        "Hogwarts Valley Revelio Page - Runespoor Egg",
+        "Hogwarts Valley Revelio Page - Enchanted Scarecrow",
+        "Hogwarts Valley Revelio Page - The Tilted House"
+    ],
+    "feldcroft": [
+        "Feldcroft Revelio Page - Broken Binoculars",
+        "Feldcroft Revelio Page - Cinnamon Bark",
+        "Feldcroft Revelio Page - Practice Dummies",
+        "Feldcroft Revelio Page - Jewelled Brooch",
+        "Feldcroft Revelio Page - Lovage Bouquet",
+        "Feldcroft Revelio Page - Peruvian Instant Darkness Powder",
+        "Feldcroft Revelio Page - The Feldcroft Well"
+    ],
+    "south_sea_bog": [
+        "South Sea Bog Revelio Page - Abandoned Bothy"
+    ],
+    "coastal_cavern": [
+        "Coastal Cavern Revelio Page- Antique Compass"
+    ],
+    "cragcroftshire": [
+        "Cragcroftshire Revelio Page - Giant Shade Tree",
+        "Cragcroftshire Revelio Page - Dragon Skeleton"
+    ],
+    "clagmar_coast": [
+        "Clagmar Coast Revelio Page - Pungous Onion Bulb",
+        "Clagmar Coast Revelio Page - Acromantula Venom"
+    ]
+}
+
+moth_frame_locations: Dict[str, List[str]] = {
+    "hogwarts_castle": [
+        "Hogwarts Castle - Astronomy Wing - Astronomy Tower Moth Frame",
+        "Hogwarts Castle - Astronomy Wing - Defense Against the Dark Arts Tower Moth Frame",
+        "Hogwarts Castle - Astronomy Wing - Tranfiguration Classroom Moth Frame",
+        "Hogwarts Castle - Astronomy Wing - Transfiguration Courtyard Moth Frame",
+        "Hogwarts Castle - Bell Tower Wing - Hogwarts North Exit Moth Frame",
+        "Hogwarts Castle - Grand Staircase - Lower Grand Staircase/Slytherin Dungeon Moth Frame",
+        "Hogwarts Castle - Grand Staircase - Ravenclaw Tower Moth Frame",
+        "Hogwarts Castle - Grand Staircase - Trophy Room Moth Frame",
+        "Hogwarts Castle - Great Hall - Viaduct Courtyard Moth Mirror",
+        "Hogwarts Castle - Great Hall - Great Hall Moth Mirror",
+        "Hogwarts Castle - Library Annex - Library Moth Frame",
+        "Hogwarts Castle - Library Annex - Potions Class Moth Frame",
+        "Hogwarts Castle - South Wing - Clock Tower Courtyard (Floo Flame) Moth Frame",
+        "Hogwarts Castle - South Wing - Clock Tower Courtyard (Argyllshire Map) Moth Frame",
+    ],
+    "hogsmeade_village": [
+        "Hogsmeade Village - Hog's Head Moth Frame",
+        "Hogsmeade Village - Broom Shop Moth Frame",
+        "Hogsmeade Village - The Old Fool Moth Frame",
+        "Hogsmeade Village - Water Mill Moth Frame",
+        "Hogsmeade Village - Dogweed and Deathcap Moth Frame",
+    ]
+}
+
+flying_page_locations: Dict[str, List[str]] = {
+    "hogwarts_castle": [
+        "Hogwarts Castle Flying Page - Astronomy Wing - Broken Statue",
+        "Hogwarts Castle Flying Page - Astronomy Wing - Defence Against the Dark Arts Tower",
+        "Hogwarts Castle Flying Page - Astronomy Wing - Charms Hall",
+        "Hogwarts Castle Flying Page - Astronomy Wing - Dungeons",
+        "Hogwarts Castle Flying Page - Bell Tower Wing - Bell Tower",
+        "Hogwarts Castle Flying Page - Bell Tower Wing - Hogwarts Grounds",
+        "Hogwarts Castle Flying Page - Bell Tower Wing - Hieroglyphic Hall",
+        "Hogwarts Castle Flying Page - Bell Tower Wing - Beasts Classroom",
+        "Hogwarts Castle Flying Page - Bell Tower Wing - Owlery",
+        "Hogwarts Castle Flying Page - Grand Staircase - Grand Staircase",
+        "Hogwarts Castle Flying Page - Grand Staircase - Quad Courtyard",
+        "Hogwarts Castle Flying Page - Great Hall - Great Hall Exterior",
+        "Hogwarts Castle Flying Page - Great Hall - Entrance Hall",
+        "Hogwarts Castle Flying Page - Great Hall - Deathday Party Room",
+        "Hogwarts Castle Flying Page - Library Annex - Central Hall Flying Page #1",
+        "Hogwarts Castle Flying Page - Library Annex - Central Hall Flying Page #2",
+        "Hogwarts Castle Flying Page - Library Annex - Viaduct Entrance",
+        "Hogwarts Castle Flying Page - Library Annex - Library",
+        "Hogwarts Castle Flying Page - South Wing - Faculty Tower",
+        "Hogwarts Castle Flying Page - South Wing - Hospital Wing",
+        "Hogwarts Castle Flying Page - South Wing - Clock Tower"
+    ],
+    "hogsmeade_village": [
+        "Hogsmeade Flying Page – Tomes and Scrolls",
+        "Hogsmeade Flying Page #1",
+        "Hogsmeade Flying Page #2",
+        "Hogsmeade Flying Page #3",
+        "Hogsmeade Flying Page #4",
+        "Hogsmeade Flying Page #5",
+        "Hogsmeade Flying Page #6",
+        "Hogsmeade Flying Page #7",
+        "Hogsmeade Flying Page #8",
+        "Hogsmeade Flying Page #9",
+        "Hogsmeade Flying Page #10",
+        "Hogsmeade Flying Page #11",
+        "Hogsmeade Flying Page #12",
+        "Hogsmeade Flying Page #13",
+        "Hogsmeade Flying Page #14",
+        "Hogsmeade Flying Page #15",
+        "Hogsmeade Flying Page #16",
+        "Hogsmeade Flying Page #17",
+        "Hogsmeade Flying Page #18",
+        "Hogsmeade Flying Page #19"
+    ]
+}
+
+orb_statue_page_locations: Dict[str, List[str]] = {
+    "hogwarts_castle": [
+        "Hogwarts Castle Orb Statue Page - Astronomy Wing - Transfiguration Class"
+        "Hogwarts Castle Orb Statue Page - Astronomy Wing - Astronomy Tower"
+        "Hogwarts Castle Orb Statue Page - Astronomy Wing - Dungeons"
+        "Hogwarts Castle Orb Statue Page - Bell Tower Wing - Hieroglyphic Hall"
+        "Hogwarts Castle Orb Statue Page - Bell Tower Wing - North Hall"
+        "Hogwarts Castle Orb Statue Page - Bell Tower Wing - Courtyard"
+        "Hogwarts Castle Orb Statue Page - Bell Tower Wing - Owlery"
+        "Hogwarts Castle Orb Statue Page - Grand Staircase - Ravenclaw Tower"
+        "Hogwarts Castle Orb Statue Page - Great Hall - Entrance Hall Exterior"
+        "Hogwarts Castle Orb Statue Page - Great Hall - Entrance Hall Interior"
+        "Hogwarts Castle Orb Statue Page - Library Annex - Restricted Section"
+        "Hogwarts Castle Orb Statue Page - Library Annex - Central Hall"
+        "Hogwarts Castle Orb Statue Page - South Wing - Quad"
+        "Hogwarts Castle Orb Statue Page - South Wing - Clock Tower"
+        "Hogwarts Castle Orb Statue Page - South Wing - Hospital Wing"
+    ]
+}
+
+dragon_brazier_page_locations: Dict[str, List[str]] = {
+    "hogwarts_castle": [
+        "Hogwarts Castle Dragon Brazier - Astronomy Wing - Astronomy Balcony"
+        "Hogwarts Castle Dragon Brazier - Bell Tower Wing - Bell Tower"
+        "Hogwarts Castle Dragon Brazier - Bell Tower Wing - North Hall"
+        "Hogwarts Castle Dragon Brazier - Great Hall - Great Hall"
+        "Hogwarts Castle Dragon Brazier - Great Hall - Boathouse"
+        "Hogwarts Castle Dragon Brazier - Great Hall - Slytherin Dungeons"
+        "Hogwarts Castle Dragon Brazier - Library Annex - Central Hall"
+        "Hogwarts Castle Dragon Brazier - South Wing - Gryffindor Tower"
+    ]
+}
