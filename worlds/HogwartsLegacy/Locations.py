@@ -3,12 +3,12 @@ from typing import Dict, List
 from BaseClasses import Location
 
 
-
 class HogwartsLegacyLocation(Location):
     game: str = "Hogwarts Legacy"
 
+
 floo_flame_locations: Dict[str, List[str]] = {
-    "hogwarts_castle" : [
+    "hogwarts_castle": [
         "Astronomy Tower Floo Flame",
         "Charms Classroom Floo Flame",
         "Defence Against the Dark Arts Tower Floo Flame",
@@ -40,47 +40,47 @@ floo_flame_locations: Dict[str, List[str]] = {
         "Clock Tower Courtyard Floo Flame",
         "Faculty Tower Floo Flame",
         "Gryffindor Common Room Floo Flame",
-        "Hospital Wing Floo Flame", # TODO: Double check if accessible
+        "Hospital Wing Floo Flame",  # TODO: Double check if accessible
         "Hogwarts South Exit Floo Flame"
     ],
-    "hogsmeade" : [
+    "hogsmeade": [
         "South Hogsmeade Floo Flame",
         "West Hogsmeade Floo Flame",
         "North Hogsmeade Floo Flame"
     ],
-    "south_hogwarts" : [
+    "south_hogwarts": [
         "Mooncalf Den Floo Flame",
         "Aranshire Floo Flame",
         "Lower Hogsfield Floo Flame"
     ],
-    "north_hogwarts" : [
+    "north_hogwarts": [
         "The Collector’s Cave Floo Flame",
         "East North Hogwarts Region Floo Flame",
         "Forbidden Forest Floo Flame",
         "Korrow Ruins Floo Flame"
     ],
-    "hogsmeade_valley" : [
+    "hogsmeade_valley": [
         "Upper Hogsfield Floo Flame",
         "East Hogsmeade Valley Floo Flame",
         "Falbarton Castle Floo Flame"
     ],
-    "forbidden_forrest" : [
+    "forbidden_forrest": [
         "West Forbidden Forest Floo Flame",
         "Jackdaw’s Tomb Floo Flame"
     ],
-    "north_ford_bog" : [
+    "north_ford_bog": [
         "Pitt-Upon-Ford Floo Flame",
         "North Ford Bog Floo Flame",
         "San Bakar’s Tower Floo Flame",
         "East North Ford Bog Floo Flame"
     ],
-    "hogwarts_valley" : [
+    "hogwarts_valley": [
         "Central Hogwarts Valley Floo Flame",
         "Brocburrow Floo Flame",
         "Keenbridge Floo Flame",
         "The Mine’s Eye Floo Flame"
     ],
-    "feldcroft" : [
+    "feldcroft": [
         "West Hogwarts Valley Floo Flame",
         "North Feldcroft Floo Flame",
         "Rookwood Castle Floo Flame",
@@ -89,53 +89,53 @@ floo_flame_locations: Dict[str, List[str]] = {
         "Feldcroft Catacomb Floo Flame",
         "Irondale Floo Flame"
     ],
-    "south_sea_bog" : [
+    "south_sea_bog": [
         "Northern South Sea Bog Floo Flame"
     ],
-    "coastal_cavern" : [
+    "coastal_cavern": [
         "East South Sea Bog Floo Flame",
         "North Poidsear Coast Floo Flame"
     ],
-    "poidsear_coast" : [
+    "poidsear_coast": [
         "Tomb of Treachery Floo Flame",
         "Poidsear Castle Floo Flame",
         "Phoenix Mountain Cave Floo Flame",
         "South Poidsear Coast Floo Flame",
         "Marunweem Bridge Floo Flame"
     ],
-    "marunweem_lake" : [
+    "marunweem_lake": [
         "Coastal Mine Floo Flame",
         "Tower Tunnel Floo Flame",
         "Marunweem Lake Floo Flame",
         "Marunweem Floo Flame",
         "Marunweem Ruins Floo Flame"
     ],
-    "cragcrosftshire" : [
+    "cragcrosftshire": [
         "Cragcroft Shore Floo Flame",
         "Cragcroft Floo Flame"
     ],
-    "manor_cape" : [
+    "manor_cape": [
         "Bainburgh Floo Flame",
         "West Manor Cape Floo Flame"
     ],
-    "clagmar_coast" : [
+    "clagmar_coast": [
         "Clagmar Castle Floo Flame",
         "South Clagmar Coast Floo Flame"
     ]
 }
 
 ancient_magic_hotspots: Dict[str, List[str]] = {
-    "north_hogwarts" : [
+    "north_hogwarts": [
         "North Hogwarts Region Ancient Magic Hotspot"
     ],
-    "hogsmeade_valley" : [
+    "hogsmeade_valley": [
         "Hogsmeade Valley Ancient Magic Hotspot"
     ],
-    "forbidden_forrest" : [
+    "forbidden_forrest": [
         "Forbidden Forest Ancient Magic Hotspot #1",
         "Forbidden Forest Ancient Magic Hotspot #2"
     ],
-    "hogwarts_valley" : [
+    "hogwarts_valley": [
         "Hogwarts Valley Ancient Magic Hotspot #1",
         "Hogwarts Valley Ancient Magic Hotspot #2",
         "Hogwarts Valley Ancient Magic Hotspot #3",
@@ -143,57 +143,57 @@ ancient_magic_hotspots: Dict[str, List[str]] = {
         "Hogwarts Valley Ancient Magic Hotspot #5",
         "Hogwarts Valley Ancient Magic Hotspot #6"
     ],
-    "feldcroft" : [
+    "feldcroft": [
         "Feldcroft Region Ancient Magic Hotspot #1",
         "Feldcroft Region Ancient Magic Hotspot #2",
         "Feldcroft Region Ancient Magic Hotspot #3",
         "Feldcroft Region Ancient Magic Hotspot #4"
     ],
-    "poidsear_coast" : [
+    "poidsear_coast": [
         "Poidsear Coast Ancient Magic Hotspot #1",
         "Poidsear Coast Ancient Magic Hotspot #2"
     ],
-    "marunweem_lake" : [
+    "marunweem_lake": [
         "Marunweem Lake Ancient Magic Hotspot #1",
         "Marunweem Lake Ancient Magic Hotspot #2"
     ],
-    "cragcrosftshire" : [
+    "cragcrosftshire": [
         "CragcrosftShire Ancient Magic Hotspot"
     ],
-    "manor_cape" : [
+    "manor_cape": [
         "Manor Cape Ancient Magic Hotspot"
     ]
 }
 
 bandit_camp_locations: Dict[str, List[str]] = {
-    "north_ford_bog" : [
+    "north_ford_bog": [
         "North Ford Bandit Camp #1",
         "North Ford Bandit Camp #2",
         "North Ford Bandit Camp #3"
     ],
-    "forbidden_forrest" : [
+    "forbidden_forrest": [
         "Forbidden Forrest Bandit Camp #1",
         "Forbidden Forrest Bandit Camp #2",
         "Forbidden Forrest Bandit Camp #3",
         "Forbidden Forrest Bandit Camp #4",
         "Forbidden Forrest Bandit Camp #5"
     ],
-    "hogsmeade_valley" : [
+    "hogsmeade_valley": [
         "Hogsmeade Valley Bandit Camp #1",
         "Hogsmeade Valley Bandit Camp #2"
     ],
-    "north_hogwarts" : [
+    "north_hogwarts": [
         "North Hogwarts Bandit Camp #1",
         "North Hogwarts Bandit Camp #2",
         "North Hogwarts Bandit Camp #3",
         "North Hogwarts Bandit Camp #4"
     ],
-    "hogwarts_valley" : [
+    "hogwarts_valley": [
         "Hogwarts Valley Bandit Camp #1",
         "Hogwarts Valley Bandit Camp #2",
         "Hogwarts Valley Bandit Camp #3"
     ],
-    "feldcroft" : [
+    "feldcroft": [
         "Feldcroft Region Bandit Camp #1",
         "Feldcroft Region Bandit Camp #2",
         "Feldcroft Region Bandit Camp #3",
@@ -204,10 +204,10 @@ bandit_camp_locations: Dict[str, List[str]] = {
         "Feldcroft Region Bandit Camp #8",
         "Feldcroft Region Bandit Camp #9"
     ],
-    "south_sea_bog" : [
+    "south_sea_bog": [
         "South Sea Bandit Camp"
     ],
-    "poidsear_coast" : [
+    "poidsear_coast": [
         "Poidsear Coast Bandit Camp #1",
         "Poidsear Coast Bandit Camp #2",
         "Poidsear Coast Bandit Camp #3",
@@ -215,21 +215,21 @@ bandit_camp_locations: Dict[str, List[str]] = {
         "Poidsear Coast Bandit Camp #5",
         "Poidsear Coast Bandit Camp #6"
     ],
-    "marunweem_lake" : [
+    "marunweem_lake": [
         "Marunweem Lake Bandit Camp #1",
         "Marunweem Lake Bandit Camp #2",
         "Marunweem Lake Bandit Camp #3",
         "Marunweem Lake Bandit Camp #4",
         "Marunweem Lake Bandit Camp #5"
     ],
-    "manor_cape" : [
+    "manor_cape": [
         "Manor Cape Bandit Camp #1",
         "Manor Cape Bandit Camp #2"
     ],
-    "cragcroftshire" : [
+    "cragcroftshire": [
         "Cragcroft Shire Bandit Camp"
     ],
-    "clagmar_coast" : [
+    "clagmar_coast": [
         "Clagmar Coast Bandit Camp #1",
         "Clagmar Coast Bandit Camp #2",
         "Clagmar Coast Bandit Camp #3",
@@ -238,41 +238,41 @@ bandit_camp_locations: Dict[str, List[str]] = {
 }
 
 battle_arena_locations: Dict[str, List[str]] = {
-    "north_ford_bog" : [
+    "north_ford_bog": [
         "North Fod Bog Battle Arena"
     ],
-    "feldcroft" : [
+    "feldcroft": [
         "Feldcroft Battle Arena"
     ]
 }
 
 merlin_trial_locations: Dict[str, List[str]] = {
-    "north_ford_bog" : [
+    "north_ford_bog": [
         "North Ford Bog Merlin Trial # 1",
         "North Ford Bog Merlin Trial # 2",
         "North Ford Bog Merlin Trial # 3",
         "North Ford Bog Merlin Trial # 4"
     ],
-    "forbidden_forest" : [
+    "forbidden_forest": [
         "Forbidden Forest Merlin Trial #1",
         "Forbidden Forest Merlin Trial #2",
         "Forbidden Forest Merlin Trial #3"
     ],
-    "hogsmeade_valley" : [
+    "hogsmeade_valley": [
         "Hogsmeade Valley Merlin Trial #1",
         "Hogsmeade Valley Merlin Trial #2",
         "Hogsmeade Valley Merlin Trial #3",
         "Hogsmeade Valley Merlin Trial #4",
         "Hogsmeade Valley Merlin Trial #5"
     ],
-    "north_hogwarts" : [
+    "north_hogwarts": [
         "North Hogwarts Merlin Trial #1",
         "North Hogwarts Merlin Trial #2",
         "North Hogwarts Merlin Trial #3",
         "North Hogwarts Merlin Trial #4",
         "North Hogwarts Merlin Trial #5"
     ],
-    "south-hogwarts" : [
+    "south-hogwarts": [
         "South Hogwarts Merlin Trial #1",
         "South Hogwarts Merlin Trial #2",
         "South Hogwarts Merlin Trial #3",
@@ -289,7 +289,7 @@ merlin_trial_locations: Dict[str, List[str]] = {
         "South Hogwarts Merlin Trial #14",
         "South Hogwarts Merlin Trial #15"
     ],
-    "hogwarts" : [
+    "hogwarts": [
         "Hogwarts Merlin Trial #1",
         "Hogwarts Merlin Trial #2",
         "Hogwarts Merlin Trial #3",
@@ -307,7 +307,7 @@ merlin_trial_locations: Dict[str, List[str]] = {
         "Hogwarts Merlin Trial #15",
         "Hogwarts Merlin Trial #16"
     ],
-    "feldcroft" : [
+    "feldcroft": [
         "Feldcroft Merlin Trial #1",
         "Feldcroft Merlin Trial #2",
         "Feldcroft Merlin Trial #3",
@@ -325,11 +325,11 @@ merlin_trial_locations: Dict[str, List[str]] = {
         "Feldcroft Merlin Trial #15",
         "Feldcroft Merlin Trial #16"
     ],
-    "south_sea" : [
+    "south_sea": [
         "South Sea Merlin Trial #1",
         "South Sea Merlin Trial #2"
     ],
-    "poidsear" : [
+    "poidsear": [
         "Poidsear Merlin Trial #1",
         "Poidsear Merlin Trial #2",
         "Poidsear Merlin Trial #3",
@@ -341,27 +341,27 @@ merlin_trial_locations: Dict[str, List[str]] = {
         "Poidsear Merlin Trial #9",
         "Poidsear Merlin Trial #10"
     ],
-    "marunweem_lake" : [
+    "marunweem_lake": [
         "Marunweem Lakes Merlin Trial #1",
         "Marunweem Lakes Merlin Trial #2",
         "Marunweem Lakes Merlin Trial #3",
         "Marunweem Lakes Merlin Trial #4"
     ],
-    "manor_cape" : [
+    "manor_cape": [
         "Manor Capes Merlin Trial #1",
         "Manor Capes Merlin Trial #2",
         "Manor Capes Merlin Trial #3",
         "Manor Capes Merlin Trial #4",
         "Manor Capes Merlin Trial #5"
     ],
-    "cragcroftshire" : [
+    "cragcroftshire": [
         "Cragcroftshires Merlin Trial #1",
         "Cragcroftshires Merlin Trial #2",
         "Cragcroftshires Merlin Trial #3",
         "Cragcroftshires Merlin Trial #4",
         "Cragcroftshires Merlin Trial #5"
     ],
-    "clagmar_coast" : [
+    "clagmar_coast": [
         "Clagmar Coast Merlin Trial #1",
         "Clagmar Coast Merlin Trial #2",
         "Clagmar Coast Merlin Trial #3",
@@ -371,7 +371,7 @@ merlin_trial_locations: Dict[str, List[str]] = {
 }
 
 vendor_locations: Dict[str, List[str]] = {
-    "tomes_and_scrolls" : [
+    "tomes_and_scrolls": [
         "Tomes and Scrolls - Beast Feeder Spellcraft",
         "Tomes and Scrolls - Beast Toybox Spellcraft",
         "Tomes and Scrolls - Chopping Station Spellcraft",
@@ -388,31 +388,31 @@ vendor_locations: Dict[str, List[str]] = {
         "Tomes and Scrolls - Medium Potions Station Spellcraft",
         "Tomes and Scrolls - T-Shaped Potions Station Spellcraft"
     ],
-    "spintwitches_sporting_needs" : [
+    "spintwitches_sporting_needs": [
         "Spintwitches - Ember Dash Broom",
         "Spintwitches - Hogwarts House Broom",
         "Spintwitches - Moon Trimmer Broom",
         "Spintwitches - Wind Wisp Broom",
         "Spintwitches - Yew Weaver Broom",
     ],
-    "j_pippins_potions" : [
+    "j_pippins_potions": [
         "J. Pippin's Potions - Focus Potion Recipe",
         "J. Pippin's Potions - Thunderbrew Potion Recipe",
         "J. Pippin's Potions - Invisibility Potion Recipe",
         "J. Pippin's Potions - Maxima Potion Recipe",
     ],
-    "the_magic_neep" : [
+    "the_magic_neep": [
         "The Magic Neep - Fluxweed Seed",
         "The Magic Neep - Knotgrass Seed",
         "The Magic Neep - Mallowsweet Seed",
         "The Magic Neep - Shrivelfig Seed",
     ],
-    "dogweed_and_deathcap" : [
+    "dogweed_and_deathcap": [
         "Dogweed and Deathcap - Chinese Chomping Cabbage Seed",
         "Dogweed and Deathcap - Mandrake Seed",
         "Dogweed and Deathcap - Venomous Tentacula Seed",
     ],
-    "gladrags_wizardwear" : [
+    "gladrags_wizardwear": [
         "Gladrags Wizardwear - Unidentified Head Item",
         "Gladrags Wizardwear - Sanguine Mask",
         "Gladrags Wizardwear - Dark Sun Hat",
@@ -430,18 +430,18 @@ vendor_locations: Dict[str, List[str]] = {
         "Gladrags Wizardwear - Black Rivet Gloves",
         "Gladrags Wizardwear - Distinguished School Robe"
     ],
-    "edgar_adley" : [
+    "edgar_adley": [
         "Edgar Adley - Tartan Vest School Uniform",
         "Edgar Adley - Lace Sorcerer Hat",
         "Edgar Adley - Rapscallion Garb"
     ],
-    "arn" : [
+    "arn": [
         "Arn - Silver Arrow Broom"
     ],
-    "priya_treadwell" : [
+    "priya_treadwell": [
         "Priya Treadwell - Family Antique Broom"
     ],
-    "agnes_coffey" : [
+    "agnes_coffey": [
         "Agnes Coffey - Item #1",
         "Agnes Coffey - Item #2",
         "Agnes Coffey - Item #3",
@@ -454,42 +454,101 @@ vendor_locations: Dict[str, List[str]] = {
 }
 
 astronomy_table_locations: Dict[str, List[str]] = {
-    "hogwarts_castle" : [
+    "hogwarts_castle": [
         "Hogwarts Castle Astronomy Table - Phoenix"
     ],
-    "south_hogwarts" : [
+    "south_hogwarts": [
         "South Hogwarts Astronomy Table - Lyra"
     ],
-    "forbidden_forest" : [
+    "forbidden_forest": [
         "Forbidden Forest Astronomy Table - Draco"
     ],
-    "north_ford_bog" : [
+    "north_ford_bog": [
         "North Ford Bog Astronomy Table - Centaurus"
     ],
-    "hogwarts_valley" : [
+    "hogwarts_valley": [
         "Hogwarts Valley Astronomy Table - Capricornus",
         "Hogwarts Valley Astronomy Table - Corvus"
     ],
-    "hogsmeade_valley" : [
+    "hogsmeade_valley": [
         "Hogsmeade Valley Astronomy Table - Leo"
     ],
-    "feldcroft_region" : [
+    "feldcroft_region": [
         "Feldcroft Region Astronomy Table - Horologium",
         "Feldcroft Region Astronomy Table - Lacerta"
     ],
-    "poidsear_coast" : [
+    "poidsear_coast": [
         "Poidsear Coast Astronomy Table - Hydra"
     ],
-    "marunweem_lake" : [
+    "marunweem_lake": [
         "Marunweem Lake Astronomy Table - Canis Major"
     ],
-    "manor_cape" : [
+    "manor_cape": [
         "Manor Cape Astronomy Table - Sagittarius"
     ],
-    "cragcroftshire" : [
+    "cragcroftshire": [
         "Cragcroftshire Astronomy Table - Cetus"
     ],
-    "clagmar_coast" : [
+    "clagmar_coast": [
         "Clagmar Coast Astronomy Table - Lupus"
+    ]
+}
+
+ballon_locations: Dict[str, List[str]] = {
+    "south_hogwarts": [
+        "South Hogwarts Ballon Cluster #1",
+        "South Hogwarts Ballon Cluster #2",
+        "South Hogwarts Ballon Cluster #3",
+        "South Hogwarts Ballon Cluster #4",
+        "South Hogwarts Ballon Cluster #5"
+    ],
+    "hogsmeade_valley": [
+        "Hogsmeade Valley Ballon Cluster"
+    ],
+    "north_hogwarts": [
+        "North Hogwarts Ballon Cluster"
+    ],
+    "north_ford_bog": [
+        "North Ford Bog Ballon Cluster #1",
+        "North Ford Bog Ballon Cluster #2"
+    ],
+    "hogwarts_valley": [
+        "Hogwarts Valley Ballon Cluster #1",
+        "Hogwarts Valley Ballon Cluster #2",
+        "Hogwarts Valley Ballon Cluster #3",
+        "Hogwarts Valley Ballon Cluster #4",
+        "Hogwarts Valley Ballon Cluster #5",
+        "Hogwarts Valley Ballon Cluster #6",
+        "Hogwarts Valley Ballon Cluster #7"
+    ],
+    "feldcroft_region": [
+        "Feldcroft Region Ballon Cluster #1",
+        "Feldcroft Region Ballon Cluster #2",
+        "Feldcroft Region Ballon Cluster #3",
+        "Feldcroft Region Ballon Cluster #4",
+        "Feldcroft Region Ballon Cluster #5",
+        "Feldcroft Region Ballon Cluster #6"
+    ],
+    "coastal_cavern": [
+        "Coastal Cavern Ballon Cluster #1"
+    ],
+    'poidsear_coast': [
+        "Poidsear Coast Ballon Cluster #1",
+        "Poidsear Coast Ballon Cluster #2",
+        "Poidsear Coast Ballon Cluster #3"
+    ],
+    "marunweem_lake": [
+        "Marunweem Lake Ballon Cluster"
+    ],
+    "manor_cape": [
+        "Manor Cape Ballon Cluster #1",
+        "Manor Cape Ballon Cluster #2"
+    ],
+    "cragcroftshire": [
+        "CragcroftShire Ballon Cluster #1",
+        "CragcroftShire Ballon Cluster #2"
+    ],
+    "clagmar_coast": [
+        "Clagmar Coast Ballon Cluster"
     ]
 }
