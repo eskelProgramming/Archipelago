@@ -494,61 +494,61 @@ astronomy_table_locations: Dict[str, List[str]] = {
     ]
 }
 
-ballon_locations: Dict[str, List[str]] = {
+balloon_locations: Dict[str, List[str]] = {
     "south_hogwarts": [
-        "South Hogwarts Ballon Cluster #1",
-        "South Hogwarts Ballon Cluster #2",
-        "South Hogwarts Ballon Cluster #3",
-        "South Hogwarts Ballon Cluster #4",
-        "South Hogwarts Ballon Cluster #5"
+        "South Hogwarts Balloon Cluster #1",
+        "South Hogwarts Balloon Cluster #2",
+        "South Hogwarts Balloon Cluster #3",
+        "South Hogwarts Balloon Cluster #4",
+        "South Hogwarts Balloon Cluster #5"
     ],
     "hogsmeade_valley": [
-        "Hogsmeade Valley Ballon Cluster"
+        "Hogsmeade Valley Balloon Cluster"
     ],
     "north_hogwarts": [
-        "North Hogwarts Ballon Cluster"
+        "North Hogwarts Balloon Cluster"
     ],
     "north_ford_bog": [
-        "North Ford Bog Ballon Cluster #1",
-        "North Ford Bog Ballon Cluster #2"
+        "North Ford Bog Balloon Cluster #1",
+        "North Ford Bog Balloon Cluster #2"
     ],
     "hogwarts_valley": [
-        "Hogwarts Valley Ballon Cluster #1",
-        "Hogwarts Valley Ballon Cluster #2",
-        "Hogwarts Valley Ballon Cluster #3",
-        "Hogwarts Valley Ballon Cluster #4",
-        "Hogwarts Valley Ballon Cluster #5",
-        "Hogwarts Valley Ballon Cluster #6",
-        "Hogwarts Valley Ballon Cluster #7"
+        "Hogwarts Valley Balloon Cluster #1",
+        "Hogwarts Valley Balloon Cluster #2",
+        "Hogwarts Valley Balloon Cluster #3",
+        "Hogwarts Valley Balloon Cluster #4",
+        "Hogwarts Valley Balloon Cluster #5",
+        "Hogwarts Valley Balloon Cluster #6",
+        "Hogwarts Valley Balloon Cluster #7"
     ],
     "feldcroft_region": [
-        "Feldcroft Region Ballon Cluster #1",
-        "Feldcroft Region Ballon Cluster #2",
-        "Feldcroft Region Ballon Cluster #3",
-        "Feldcroft Region Ballon Cluster #4",
-        "Feldcroft Region Ballon Cluster #5",
-        "Feldcroft Region Ballon Cluster #6"
+        "Feldcroft Region Balloon Cluster #1",
+        "Feldcroft Region Balloon Cluster #2",
+        "Feldcroft Region Balloon Cluster #3",
+        "Feldcroft Region Balloon Cluster #4",
+        "Feldcroft Region Balloon Cluster #5",
+        "Feldcroft Region Balloon Cluster #6"
     ],
     "coastal_cavern": [
-        "Coastal Cavern Ballon Cluster #1"
+        "Coastal Cavern Balloon Cluster #1"
     ],
     'poidsear_coast': [
-        "Poidsear Coast Ballon Cluster #1",
-        "Poidsear Coast Ballon Cluster #2",
-        "Poidsear Coast Ballon Cluster #3"
+        "Poidsear Coast Balloon Cluster #1",
+        "Poidsear Coast Balloon Cluster #2",
+        "Poidsear Coast Balloon Cluster #3"
     ],
     "marunweem_lake": [
-        "Marunweem Lake Ballon Cluster"
+        "Marunweem Lake Balloon Cluster"
     ],
     "manor_cape": [
-        "Manor Cape Ballon Cluster #1",
-        "Manor Cape Ballon Cluster #2"
+        "Manor Cape Balloon Cluster #1",
+        "Manor Cape Balloon Cluster #2"
     ],
     "cragcroftshire": [
-        "CragcroftShire Ballon Cluster #1",
-        "CragcroftShire Ballon Cluster #2"
+        "CragcroftShire Balloon Cluster #1",
+        "CragcroftShire Balloon Cluster #2"
     ],
     "clagmar_coast": [
-        "Clagmar Coast Ballon Cluster"
+        "Clagmar Coast Balloon Cluster"
     ]
 }
