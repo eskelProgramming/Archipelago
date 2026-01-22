@@ -1275,3 +1275,34 @@ quest_locations: Dict[str, List[str]] = {
         "Natsai Quest - Acting on Instinct"
     ]
 }
+
+house_token_locations: Dict[str, List[str]] = {
+    "astronomy_wing" : [
+        "House Token - Astronomy Wing - Astronomy Tower",
+        "House Token - Astronomy Wing - Defense Against the Dark Arts Classroom"
+    ],
+    "great_hall" : [
+        "House Token - Great Hall - Great Hall",
+        "House Token - Great Hall - Entrance Hall"
+    ],
+    "great_staircase" : [
+        "House Token - Great Staircase - Great Staircase",
+        "House Token - Great Staircase - Quad Courtyard"
+    ],
+    "bell_tower_courtyard" : [
+        "House Token - Bell Tower Courtyard - Bell Tower Courtyard",
+        "House Token - Bell Tower Courtyard - Upper Dungeons",
+        "House Token - Bell Tower Courtyard - Lower Dungeons",
+    ],
+    "library_annex" : [
+        "House Token - Library Annex - Central Hall",
+        "House Token - Library Annex - Viaduct Entrance",
+        "House Token - Library Annex - Library",
+        "House Token - Library Annex - Potions Classroom"
+    ],
+    "south_wing" : [
+        "House Token - South Wing - Clock Tower",
+        "House Token - South Wing - Faculty Tower",
+        "House Token - South Wing - Hospital Wing"
+    ]
+}
