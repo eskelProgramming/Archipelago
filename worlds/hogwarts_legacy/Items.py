@@ -149,12 +149,15 @@ spells: List[ItemDict] = [
     }
 ]
 
-key_items = [
+goal_items = [
     {
         "name": "Pensieve Artifact",
         "count": 6,
         "classification": ItemClassification.progression_skip_balancing
-    },
+    }
+]
+
+key_items = [
     {
         "name": "Telescope",
         "count": 1,
