@@ -61,7 +61,7 @@ class HogwartsLegacyWorld(World):
     def create_item(self, name: str) -> Item:
         item_id = self.item_name_to_id[name]
         item_data = self.all_items[item_id - base_id]
-        return HogwartsLegacyItem(name , item_data["classification"], item_id, self.player)
+        return HogwartsLegacyItem(name, item_data["classification"], item_id, self.player)
 
     def create_items(self) -> None:
         nb_items_added = 0
