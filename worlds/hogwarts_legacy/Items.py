@@ -144,7 +144,7 @@ spells: List[ItemDict] = [
         "classification": ItemClassification.progression
     },
     {
-        "name": "Alohomora - Progressive",
+        "name": "Progressive Alohomora",
         "count": 3,
         "classification": ItemClassification.progression
     }
