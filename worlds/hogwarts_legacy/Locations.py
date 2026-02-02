@@ -1,5 +1,6 @@
+from dataclasses import dataclass, asdict
 from enum import Enum
-from typing import List
+from typing import List, Any
 
 from BaseClasses import Location
 
@@ -30,21 +31,41 @@ class HogwartsLegacyLocationType(Enum):
     HOUSE_TOKEN = "House Token"
 
 
+@dataclass(order=False)
 class HogwartsLegacyLocationInfo:
     name: str
-    requirements: List[str]
     location_type: HogwartsLegacyLocationType
+    requirements: List[str]
     collected: bool = False
-
-    def __init__(self, name: str, location_type: HogwartsLegacyLocationType, requirements: List[str]) -> None:
-        self.name = name
-        self.location_type = location_type
-        self.requirements = requirements
 
     def __lt__(self, other):
         if not isinstance(other, HogwartsLegacyLocationInfo):
             return NotImplemented
         return self.name.lower() < other.name.lower()
+
+    def __hash__(self):
+        return hash(self.name.lower())
+
+    def to_json_safe(self) -> Any:
+        return self._convert(asdict(self))
+
+    def _convert(self, value):
+        if isinstance(value, HogwartsLegacyLocationInfo):
+            return value.to_json_safe()
+
+        if hasattr(value, "name") and not isinstance(value, str):
+            try:
+                return value.name
+            except Exception:
+                pass
+
+        if isinstance(value, list):
+            return [self._convert(v) for v in value]
+
+        if isinstance(value, dict):
+            return {k: self._convert(v) for k, v in value.items()}
+
+        return value
 
 
 locations: List[HogwartsLegacyLocationInfo] = [

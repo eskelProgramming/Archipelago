@@ -5,11 +5,7 @@ from worlds.AutoWorld import WebWorld, World
 from worlds.hogwarts_legacy import Rules
 from worlds.hogwarts_legacy.Items import spells, goal_items, key_items, non_required_quest_items, potion_recipes_items, \
     seed_items, filler_items, base_id, HogwartsLegacyItem
-from worlds.hogwarts_legacy.Locations import floo_flame_locations, ancient_magic_hotspots, bandit_camp_locations, \
-    battle_arena_locations, merlin_trial_locations, vendor_locations, astronomy_table_locations, balloon_locations, \
-    broom_trial_locations, collection_chest_locations, demiguise_statue_locations, revelio_page_locations, \
-    moth_frame_locations, flying_page_locations, orb_statue_page_locations, dragon_brazier_page_locations, \
-    landing_platform_locations, quest_locations, house_token_locations
+from worlds.hogwarts_legacy.Locations import locations
 from worlds.hogwarts_legacy.Options import HogwartsLegacyOptions
 from worlds.hogwarts_legacy.Regions import hogwarts_regions_all
 from worlds.inscryption import regions_to_locations
@@ -43,14 +39,12 @@ class HogwartsLegacyWorld(World):
     all_items = (spells + goal_items + key_items + non_required_quest_items
                  + potion_recipes_items + seed_items + filler_items)
     item_name_to_id = {item["name"]: i + base_id for i, item in enumerate(all_items)}
-    all_locations = (floo_flame_locations + ancient_magic_hotspots + bandit_camp_locations + battle_arena_locations +
-                     merlin_trial_locations + vendor_locations + astronomy_table_locations + balloon_locations +
-                     broom_trial_locations + collection_chest_locations + demiguise_statue_locations +
-                     revelio_page_locations + revelio_page_locations + moth_frame_locations + flying_page_locations +
-                     orb_statue_page_locations + dragon_brazier_page_locations + landing_platform_locations +
-                     quest_locations + house_token_locations)
+    all_locations = [loc.to_json_safe() for loc in locations]
 
-    location_name_to_id = {location: i + base_id for i, location in enumerate(all_locations)}
+    location_name_to_id = {
+        location["name"]: i + base_id
+        for i, location in enumerate(all_locations)
+    }
 
     def generate_early(self) -> None:
         self.all_items = [item.copy() for item in self.all_items]
