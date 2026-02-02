@@ -41,6 +41,11 @@ class HogwartsLegacyLocationInfo:
         self.location_type = location_type
         self.requirements = requirements
 
+    def __lt__(self, other):
+        if not isinstance(other, HogwartsLegacyLocationInfo):
+            return NotImplemented
+        return self.name.lower() < other.name.lower()
+
 
 locations: List[HogwartsLegacyLocationInfo] = [
     # Floo Flames
