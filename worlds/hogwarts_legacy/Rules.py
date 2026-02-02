@@ -78,13 +78,13 @@ class HogwartsLegacyRules:
     def has_incendio(self, state: CollectionState) -> bool:
         return state.has("Incendio", self.player)
 
-    def has_final_repository(self, state: CollectionState) -> bool:
+    def has_final_repository_requirements(self, state: CollectionState) -> bool:
         return state.has("Pensieve Artifact", self.player, 6)
 
     def set_all_rules(self):
         multiworld = self.world.multiworld
 
-        multiworld.completion_condition[self.player] = self.has_final_repository
+        multiworld.completion_condition[self.player] = self.has_final_repository_requirements
 
         for location in locations:
             if location.name in self.location_rules:
