@@ -41,10 +41,7 @@ class HogwartsLegacyWorld(World):
     item_name_to_id = {item["name"]: i + base_id for i, item in enumerate(all_items)}
     all_locations = [loc.to_json_safe() for loc in locations]
 
-    location_name_to_id = {
-        location: i + base_id
-        for i, location in enumerate(all_locations)
-    }
+    location_name_to_id = {location: i + base_id for i, location in enumerate(all_locations)}
 
     def generate_early(self) -> None:
         self.all_items = [item.copy() for item in self.all_items]
