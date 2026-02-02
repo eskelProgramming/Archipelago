@@ -1,10 +1,10 @@
-from typing import Mapping, Any
+from typing import Mapping, Any, List
 
-from BaseClasses import Tutorial, Item, Region
+from BaseClasses import Tutorial, Item, Region, ItemClassification
 from worlds.AutoWorld import WebWorld, World
 from worlds.hogwarts_legacy import Rules
 from worlds.hogwarts_legacy.Items import spells, goal_items, key_items, non_required_quest_items, potion_recipes_items, \
-    seed_items, filler_items, base_id, HogwartsLegacyItem
+    seed_items, filler_items, base_id, HogwartsLegacyItem, ItemDict
 from worlds.hogwarts_legacy.Locations import locations
 from worlds.hogwarts_legacy.Options import HogwartsLegacyOptions
 from worlds.hogwarts_legacy.Regions import hogwarts_regions_all
@@ -39,7 +39,7 @@ class HogwartsLegacyWorld(World):
     all_items = (spells + goal_items + key_items + non_required_quest_items
                  + potion_recipes_items + seed_items + filler_items)
     item_name_to_id = {item["name"]: i + base_id for i, item in enumerate(all_items)}
-    all_locations = [loc.to_json_safe() for loc in locations]
+    all_locations = [loc.name for loc in locations]
 
     location_name_to_id = {location: i + base_id for i, location in enumerate(all_locations)}
 
@@ -56,21 +56,17 @@ class HogwartsLegacyWorld(World):
 
     def create_items(self) -> None:
         nb_items_added = 0
-        useful_items = (spells + goal_items + key_items + non_required_quest_items
+        useful_items: List[ItemDict] = (spells + goal_items + key_items + non_required_quest_items
                         + potion_recipes_items + seed_items)
 
         for item in useful_items:
-            for _ in range(item["count"]):
-                new_item = self.create_item(item["name"])
-                self.multiworld.itempool.append(new_item)
-                nb_items_added += 1
+            if item["classification"] == ItemClassification.useful:
+                for _ in range(item["count"]):
+                    new_item = self.create_item(item["name"])
+                    self.multiworld.itempool.append(new_item)
+                    nb_items_added += 1
 
         filler_count = len(self.all_locations) - nb_items_added
-
-        print(f"There are {len(self.all_locations)} locations.")
-        print(f"There are {len(useful_items)} useful items.")
-        print(f"There were {nb_items_added} items added.")
-        print(f"Added {filler_count} filler items")
 
         for i in range(filler_count):
             index = i % len(filler_items)
