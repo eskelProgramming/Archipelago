@@ -1,6 +1,6 @@
 from dataclasses import dataclass, asdict
 from enum import Enum
-from typing import List, Any
+from typing import List, Any, Dict
 
 from BaseClasses import Location
 
@@ -1436,3 +1436,7 @@ locations: List[HogwartsLegacyLocationInfo] = [
     HogwartsLegacyLocationInfo("House Token - South Wing - Faculty Tower", HogwartsLegacyLocationType.HOUSE_TOKEN, []),
     HogwartsLegacyLocationInfo("House Token - South Wing - Hospital Wing", HogwartsLegacyLocationType.HOUSE_TOKEN, [])
 ]
+
+regions_to_locations: Dict[str, List[str]] = {
+    "Menu": [loc.name for loc in locations]
+}

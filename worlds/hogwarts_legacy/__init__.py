@@ -1,15 +1,13 @@
-from typing import Mapping, Any, List
+from typing import Mapping, Any, List, Dict
 
 from BaseClasses import Tutorial, Item, Region, ItemClassification
 from worlds.AutoWorld import WebWorld, World
 from worlds.hogwarts_legacy import Rules
 from worlds.hogwarts_legacy.Items import spells, goal_items, key_items, non_required_quest_items, potion_recipes_items, \
     seed_items, filler_items, base_id, HogwartsLegacyItem, ItemDict
-from worlds.hogwarts_legacy.Locations import locations
+from worlds.hogwarts_legacy.Locations import locations, regions_to_locations
 from worlds.hogwarts_legacy.Options import HogwartsLegacyOptions
 from worlds.hogwarts_legacy.Regions import hogwarts_regions_all
-from worlds.inscryption import regions_to_locations
-
 
 class HogwartsWeb(WebWorld):
     theme = "party"
@@ -40,7 +38,6 @@ class HogwartsLegacyWorld(World):
                  + potion_recipes_items + seed_items + filler_items)
     item_name_to_id = {item["name"]: i + base_id for i, item in enumerate(all_items)}
     all_locations = [loc.name for loc in locations]
-
     location_name_to_id = {location: i + base_id for i, location in enumerate(all_locations)}
 
     def generate_early(self) -> None:
@@ -66,13 +63,7 @@ class HogwartsLegacyWorld(World):
                     self.multiworld.itempool.append(new_item)
                     nb_items_added += 1
 
-        filler_count = len(self.all_locations) - nb_items_added
-
-        for i in range(filler_count):
-            index = i % len(filler_items)
-            filler_item = filler_items[index]
-            new_item = self.create_item(filler_item["name"])
-            self.multiworld.itempool.append(new_item)
+        self.multiworld.itempool += [self.create_filler() for _ in range(len(self.all_locations) - len(self.multiworld.itempool))]
 
     def create_regions(self) -> None:
         used_regions = hogwarts_regions_all
@@ -90,7 +81,7 @@ class HogwartsLegacyWorld(World):
     def setup(self) -> None:
         Rules.HogwartsLegacyRules(self).set_all_rules()
 
-    def fill_slot_data(self) -> Mapping[str, Any]:
+    def fill_slot_data(self) -> Dict[str, Any]:
         return self.options.as_dict(
             "house"
         )

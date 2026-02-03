@@ -2,7 +2,7 @@ from typing import TypedDict, List
 
 from BaseClasses import Item, ItemClassification
 
-base_id = 168000
+base_id = 147000
 
 class HogwartsLegacyItem(Item):
     name: str = "Hogwarts Legacy"
