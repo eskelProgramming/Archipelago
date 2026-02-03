@@ -243,7 +243,6 @@ locations: List[HogwartsLegacyLocationInfo] = [
     HogwartsLegacyLocationInfo("Clagmar Coast Bandit Camp #2", HogwartsLegacyLocationType.BANDIT_CAMP, []),
     HogwartsLegacyLocationInfo("Clagmar Coast Bandit Camp #3", HogwartsLegacyLocationType.BANDIT_CAMP, []),
     HogwartsLegacyLocationInfo("Clagmar Coast Bandit Camp #4", HogwartsLegacyLocationType.BANDIT_CAMP, []),
-    HogwartsLegacyLocationInfo("Clagmar Coast Bandit Camp #4", HogwartsLegacyLocationType.BANDIT_CAMP, []),
     HogwartsLegacyLocationInfo("North Fod Bog Battle Arena", HogwartsLegacyLocationType.BATTLE_ARENA, []),
     HogwartsLegacyLocationInfo("Feldcroft Battle Arena", HogwartsLegacyLocationType.BATTLE_ARENA, []),
 
