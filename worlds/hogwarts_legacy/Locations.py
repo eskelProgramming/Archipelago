@@ -29,6 +29,7 @@ class HogwartsLegacyLocationType(Enum):
     LANDING_PLATFORM = "Landing Platform"
     QUEST = "Quest"
     HOUSE_TOKEN = "House Token"
+    FINAL = "Final"
 
 
 @dataclass(order=False)
@@ -1433,7 +1434,10 @@ locations: List[HogwartsLegacyLocationInfo] = [
                                HogwartsLegacyLocationType.HOUSE_TOKEN, []),
     HogwartsLegacyLocationInfo("House Token - South Wing - Clock Tower", HogwartsLegacyLocationType.HOUSE_TOKEN, []),
     HogwartsLegacyLocationInfo("House Token - South Wing - Faculty Tower", HogwartsLegacyLocationType.HOUSE_TOKEN, []),
-    HogwartsLegacyLocationInfo("House Token - South Wing - Hospital Wing", HogwartsLegacyLocationType.HOUSE_TOKEN, [])
+    HogwartsLegacyLocationInfo("House Token - South Wing - Hospital Wing", HogwartsLegacyLocationType.HOUSE_TOKEN, []),
+
+    # Completion requirements
+    HogwartsLegacyLocationInfo("Final Boss", HogwartsLegacyLocationType.FINAL, [])
 ]
 
 regions_to_locations: Dict[str, List[str]] = {

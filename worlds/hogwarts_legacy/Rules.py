@@ -1,10 +1,10 @@
 from typing import Dict, Callable, TYPE_CHECKING
 
-from BaseClasses import CollectionState
+from BaseClasses import CollectionState, ItemClassification
 from .Locations import locations
 
 if TYPE_CHECKING:
-    from . import HogwartsLegacyWorld
+    from . import HogwartsLegacyWorld, HogwartsLegacyItem
 else:
     HogwartsLegacyWorld = object
 
@@ -13,7 +13,7 @@ else:
 class HogwartsLegacyRules:
     player: int
     world: HogwartsLegacyWorld
-    location_rules: Dict[str, Callable[[CollectionState], bool]]
+    location_rules: Dict[str, Callable[[CollectionState], bool]] = {}
 
     def __init__(self, world: HogwartsLegacyWorld) -> None:
         self.player = world.player
@@ -79,13 +79,4 @@ class HogwartsLegacyRules:
         return state.has("Incendio", self.player)
 
     def has_final_repository_requirements(self, state: CollectionState) -> bool:
-        return state.has("Pensieve Artifact", self.player, 6)
-
-    def set_all_rules(self):
-        multiworld = self.world.multiworld
-
-        multiworld.completion_condition[self.player] = self.has_final_repository_requirements
-
-        for location in locations:
-            if location.name in self.location_rules:
-                location.access_rule = self.location_rules[location.name]
+        return state.has("Final Item", self.player, 1)

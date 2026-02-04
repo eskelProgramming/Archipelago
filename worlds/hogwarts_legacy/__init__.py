@@ -4,10 +4,12 @@ from BaseClasses import Tutorial, Item, Region, ItemClassification
 from worlds.AutoWorld import WebWorld, World
 from worlds.hogwarts_legacy import Rules
 from worlds.hogwarts_legacy.Items import spells, goal_items, key_items, non_required_quest_items, potion_recipes_items, \
-    seed_items, filler_items, base_id, HogwartsLegacyItem, ItemDict
+    seed_items, filler_items, base_id, HogwartsLegacyItem, ItemDict, is_progression
 from worlds.hogwarts_legacy.Locations import locations, regions_to_locations
 from worlds.hogwarts_legacy.Options import HogwartsLegacyOptions
 from worlds.hogwarts_legacy.Regions import hogwarts_regions_all
+from worlds.hogwarts_legacy.Rules import HogwartsLegacyRules
+
 
 class HogwartsWeb(WebWorld):
     theme = "party"
@@ -46,10 +48,12 @@ class HogwartsLegacyWorld(World):
     def get_filler_item_name(self) -> str:
         return self.random.choice(filler_items)["name"]
 
-    def create_item(self, name: str) -> Item:
-        item_id = self.item_name_to_id[name]
-        item_data = self.all_items[item_id - base_id]
-        return HogwartsLegacyItem(name, item_data["classification"], item_id, self.player)
+    def create_item(self, item: str) -> Item:
+        classification = ItemClassification.progression if is_progression(item) else ItemClassification.filler
+        return HogwartsLegacyItem(item, classification, self.item_name_to_id[item], self.player)
+
+    def create_event(self, event: str) -> HogwartsLegacyItem:
+        return HogwartsLegacyItem(event, ItemClassification.progression, None, self.player)
 
     def create_items(self) -> None:
         nb_items_added = 0
@@ -63,7 +67,17 @@ class HogwartsLegacyWorld(World):
                     self.multiworld.itempool.append(new_item)
                     nb_items_added += 1
 
-        self.multiworld.itempool += [self.create_filler() for _ in range(len(self.all_locations) - len(self.multiworld.itempool))]
+        self.multiworld.get_location("Final Boss", self.player).place_locked_item(self.create_event("Victory"))
+        nb_items_added += 1
+
+        filler_count = len(self.all_locations)
+        filler_count -= nb_items_added
+
+        for i in range(filler_count):
+            index = i % len(filler_items)
+            filler_item = filler_items[index]
+            new_item = self.create_item(filler_item["name"])
+            self.multiworld.itempool.append(new_item)
 
     def create_regions(self) -> None:
         used_regions = hogwarts_regions_all
@@ -78,8 +92,12 @@ class HogwartsLegacyWorld(World):
                 location: self.location_name_to_id[location] for location in regions_to_locations[region_name]
             })
 
-    def setup(self) -> None:
-        Rules.HogwartsLegacyRules(self).set_all_rules()
+    def set_rules(self) -> None:
+        self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
+
+        for location in locations:
+            if location.name in HogwartsLegacyRules.location_rules:
+                location.access_rule = HogwartsLegacyRules.location_rules[location.name]
 
     def fill_slot_data(self) -> Dict[str, Any]:
         return self.options.as_dict(

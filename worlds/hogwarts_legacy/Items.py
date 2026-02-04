@@ -4,6 +4,9 @@ from BaseClasses import Item, ItemClassification
 
 base_id = 147000
 
+def is_progression(item: str) -> bool:
+    return item not in filler_items
+
 class HogwartsLegacyItem(Item):
     name: str = "Hogwarts Legacy"
 
