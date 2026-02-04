@@ -8,6 +8,8 @@ from worlds.hogwarts_legacy.Items import spells, goal_items, key_items, non_requ
 from worlds.hogwarts_legacy.Locations import locations, regions_to_locations
 from worlds.hogwarts_legacy.Options import HogwartsLegacyOptions
 from worlds.hogwarts_legacy.Regions import hogwarts_regions_all
+from worlds.hogwarts_legacy.Rules import HogwartsLegacyRules
+
 
 class HogwartsWeb(WebWorld):
     theme = "party"
@@ -85,7 +87,7 @@ class HogwartsLegacyWorld(World):
                 location: self.location_name_to_id[location] for location in regions_to_locations[region_name]
             })
 
-    def setup(self) -> None:
+    def set_rules(self) -> None:
         Rules.HogwartsLegacyRules(self).set_all_rules()
 
     def fill_slot_data(self) -> Dict[str, Any]:
