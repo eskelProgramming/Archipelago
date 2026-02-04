@@ -13,7 +13,7 @@ else:
 class HogwartsLegacyRules:
     player: int
     world: HogwartsLegacyWorld
-    location_rules: Dict[str, Callable[[CollectionState], bool]]
+    location_rules: Dict[str, Callable[[CollectionState], bool]] = {}
 
     def __init__(self, world: HogwartsLegacyWorld) -> None:
         self.player = world.player
@@ -80,13 +80,3 @@ class HogwartsLegacyRules:
 
     def has_final_repository_requirements(self, state: CollectionState) -> bool:
         return state.has("Final Item", self.player, 1)
-
-    def set_all_rules(self):
-        multiworld = self.world.multiworld
-
-        multiworld.get_location("Final Boss", self.player).place_locked_item(HogwartsLegacyItem("Victory", ItemClassification.progression, None)), self.player
-        multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
-
-        for location in locations:
-            if location.name in self.location_rules:
-                location.access_rule = self.location_rules[location.name]
