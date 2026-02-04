@@ -63,7 +63,14 @@ class HogwartsLegacyWorld(World):
                     self.multiworld.itempool.append(new_item)
                     nb_items_added += 1
 
-        self.multiworld.itempool += [self.create_filler() for _ in range(len(self.all_locations) - len(self.multiworld.itempool))]
+        filler_count = len(self.all_locations)
+        filler_count -= nb_items_added
+
+        for i in range(filler_count):
+            index = i % len(filler_items)
+            filler_item = filler_items[index]
+            new_item = self.create_item(filler_item["name"])
+            self.multiworld.itempool.append(new_item)
 
     def create_regions(self) -> None:
         used_regions = hogwarts_regions_all
