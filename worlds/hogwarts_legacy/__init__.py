@@ -1,0 +1,105 @@
+from typing import Mapping, Any, List, Dict
+
+from BaseClasses import Tutorial, Item, Region, ItemClassification
+from worlds.AutoWorld import WebWorld, World
+from worlds.hogwarts_legacy import Rules
+from worlds.hogwarts_legacy.Items import spells, goal_items, key_items, non_required_quest_items, potion_recipes_items, \
+    seed_items, filler_items, base_id, HogwartsLegacyItem, ItemDict, is_progression
+from worlds.hogwarts_legacy.Locations import locations, regions_to_locations
+from worlds.hogwarts_legacy.Options import HogwartsLegacyOptions
+from worlds.hogwarts_legacy.Regions import hogwarts_regions_all
+from worlds.hogwarts_legacy.Rules import HogwartsLegacyRules
+
+
+class HogwartsWeb(WebWorld):
+    theme = "party"
+
+    guide_en = Tutorial(
+        "Multiworld Setup Guide",
+        "A guide to setting up the Hogwarts Legacy Archipelago Multiworld",
+        "English",
+        "setup_en.md",
+        "setup/en",
+        ["eskelProgramming"]
+    )
+
+    tutorials = [guide_en]
+
+class HogwartsLegacyWorld(World):
+    """
+    Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books.
+    For the first time, experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient
+    secret that threatens to tear the wizarding world apart. Now you can take control of the action and be at the
+    center of your own adventure in the wizarding world. Your legacy is what you make of it.
+    """
+    game = "Hogwarts Legacy"
+    web = HogwartsWeb()
+    options_dataclass = HogwartsLegacyOptions
+    options: HogwartsLegacyOptions
+    all_items = (spells + goal_items + key_items + non_required_quest_items
+                 + potion_recipes_items + seed_items + filler_items)
+    item_name_to_id = {item["name"]: i + base_id for i, item in enumerate(all_items)}
+    all_locations = [loc.name for loc in locations]
+    location_name_to_id = {location: i + base_id for i, location in enumerate(all_locations)}
+
+    def generate_early(self) -> None:
+        self.all_items = [item.copy() for item in self.all_items]
+
+    def get_filler_item_name(self) -> str:
+        return self.random.choice(filler_items)["name"]
+
+    def create_item(self, item: str) -> Item:
+        classification = ItemClassification.progression if is_progression(item) else ItemClassification.filler
+        return HogwartsLegacyItem(item, classification, self.item_name_to_id[item], self.player)
+
+    def create_event(self, event: str) -> HogwartsLegacyItem:
+        return HogwartsLegacyItem(event, ItemClassification.progression, None, self.player)
+
+    def create_items(self) -> None:
+        nb_items_added = 0
+        useful_items: List[ItemDict] = (spells + goal_items + key_items + non_required_quest_items
+                        + potion_recipes_items + seed_items)
+
+        for item in useful_items:
+            if item["classification"] == ItemClassification.useful:
+                for _ in range(item["count"]):
+                    new_item = self.create_item(item["name"])
+                    self.multiworld.itempool.append(new_item)
+                    nb_items_added += 1
+
+        self.multiworld.get_location("Final Boss", self.player).place_locked_item(self.create_event("Victory"))
+        nb_items_added += 1
+
+        filler_count = len(self.all_locations)
+        filler_count -= nb_items_added
+
+        for i in range(filler_count):
+            index = i % len(filler_items)
+            filler_item = filler_items[index]
+            new_item = self.create_item(filler_item["name"])
+            self.multiworld.itempool.append(new_item)
+
+    def create_regions(self) -> None:
+        used_regions = hogwarts_regions_all
+
+        for region_name in used_regions.keys():
+            self.multiworld.regions.append(Region(region_name, self.player, self.multiworld))
+
+        for region_name, region_connections in used_regions.items():
+            region = self.get_region(region_name)
+            region.add_exits(region_connections)
+            region.add_locations({
+                location: self.location_name_to_id[location] for location in regions_to_locations[region_name]
+            })
+
+    def set_rules(self) -> None:
+        self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
+
+        for location in locations:
+            if location.name in HogwartsLegacyRules.location_rules:
+                location.access_rule = HogwartsLegacyRules.location_rules[location.name]
+
+    def fill_slot_data(self) -> Dict[str, Any]:
+        return self.options.as_dict(
+            "house"
+        )
