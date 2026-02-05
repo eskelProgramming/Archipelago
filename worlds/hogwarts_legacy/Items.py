@@ -15,6 +15,34 @@ class ItemDict(TypedDict):
     count: int
     classification: ItemClassification
 
+early_items: List[ItemDict] = [
+    {
+        "name": "Levioso",
+        "count": 1,
+        "classification": ItemClassification.progression
+    },
+    {
+        "name": "Accio",
+        "count": 1,
+        "classification": ItemClassification.progression
+    },
+    {
+        "name": "Reparo",
+        "count": 1,
+        "classification": ItemClassification.progression
+    },
+    {
+        "name": "Ancient Magic Throw",
+        "count": 1,
+        "classification": ItemClassification.progression
+    },
+    {
+        "name": "Ancient Magic",
+        "count": 1,
+        "classification": ItemClassification.progression
+    },
+]
+
 spells: List[ItemDict] = [
     {
         "name": "Arresto Momentum",
@@ -27,17 +55,7 @@ spells: List[ItemDict] = [
         "classification": ItemClassification.progression
     },
     {
-        "name": "Levioso",
-        "count": 1,
-        "classification": ItemClassification.progression
-    },
-    {
         "name": "Transformation",
-        "count": 1,
-        "classification": ItemClassification.progression
-    },
-    {
-        "name": "Accio",
         "count": 1,
         "classification": ItemClassification.progression
     },
@@ -87,11 +105,6 @@ spells: List[ItemDict] = [
         "classification": ItemClassification.progression
     },
     {
-        "name": "Reparo",
-        "count": 1,
-        "classification": ItemClassification.progression
-    },
-    {
         "name": "Wingardium Leviosa",
         "count": 1,
         "classification": ItemClassification.progression
@@ -135,16 +148,6 @@ spells: List[ItemDict] = [
         "name": "Nab-Sack",
         "count": 1,
         "classification": ItemClassification.useful
-    },
-    {
-        "name": "Ancient Magic Throw",
-        "count": 1,
-        "classification": ItemClassification.progression
-    },
-    {
-        "name": "Ancient Magic",
-        "count": 1,
-        "classification": ItemClassification.progression
     },
     {
         "name": "Progressive Alohomora",

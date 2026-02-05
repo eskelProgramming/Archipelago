@@ -1,10 +1,10 @@
 from typing import Dict, Callable, TYPE_CHECKING
 
-from BaseClasses import CollectionState, ItemClassification
-from .Locations import locations
+from BaseClasses import CollectionState
+from .Locations import world_locations
 
 if TYPE_CHECKING:
-    from . import HogwartsLegacyWorld, HogwartsLegacyItem
+    from . import HogwartsLegacyWorld
 else:
     HogwartsLegacyWorld = object
 
@@ -14,12 +14,16 @@ class HogwartsLegacyRules:
     player: int
     world: HogwartsLegacyWorld
     location_rules: Dict[str, Callable[[CollectionState], bool]] = {}
+    region_rules: Dict[str, Callable[[CollectionState], bool]]
 
     def __init__(self, world: HogwartsLegacyWorld) -> None:
         self.player = world.player
         self.world = world
+        self.region_rules = {
+            "Full Map": self.has_full_map_requirements
+        }
 
-        for location in locations:
+        for location in world_locations:
             for req in location.requirements:
                 if req == "Ancient Magic":
                     self.location_rules[location.name] = self.has_ancient_magic
@@ -44,6 +48,8 @@ class HogwartsLegacyRules:
                 elif req == "Incendio":
                     self.location_rules[location.name] = self.has_incendio
 
+    def has_full_map_requirements(self, state: CollectionState) -> bool:
+        return state.has_all(["Levioso", "Accio", "Reparo", "Ancient Magic Throw", "Ancient Magic"], self.player)
 
     def has_ancient_magic(self, state: CollectionState) -> bool:
         return state.has("Ancient Magic", self.player)

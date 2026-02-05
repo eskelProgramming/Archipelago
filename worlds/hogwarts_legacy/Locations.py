@@ -69,7 +69,7 @@ class HogwartsLegacyLocationInfo:
         return value
 
 
-locations: List[HogwartsLegacyLocationInfo] = [
+world_locations: List[HogwartsLegacyLocationInfo] = [
     # Floo Flames
     HogwartsLegacyLocationInfo("Astronomy Tower Floo Flame", HogwartsLegacyLocationType.FLOO_FLAME, []),
     HogwartsLegacyLocationInfo("Charms Classroom Floo Flame", HogwartsLegacyLocationType.FLOO_FLAME, []),
@@ -1440,6 +1440,11 @@ locations: List[HogwartsLegacyLocationInfo] = [
     HogwartsLegacyLocationInfo("Final Boss", HogwartsLegacyLocationType.FINAL, [])
 ]
 
+early_locations: List[HogwartsLegacyLocationInfo] = [
+
+]
+
 regions_to_locations: Dict[str, List[str]] = {
-    "Menu": [loc.name for loc in locations]
+    "Full Map": [loc.name for loc in world_locations],
+    "Early Hogwarts": [loc.name for loc in early_locations]
 }
