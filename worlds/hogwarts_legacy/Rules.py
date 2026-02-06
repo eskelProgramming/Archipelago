@@ -39,14 +39,14 @@ class HogwartsLegacyRules:
                     self.location_rules[location.name] = self.has_alohomora_two
                 elif req == "Progressive Alohomora 3":
                     self.location_rules[location.name] = self.has_alohomora_three
-                elif req == "Lumos":
-                    self.location_rules[location.name] = self.has_lumos
                 elif req == "Accio":
                     self.location_rules[location.name] = self.has_accio
                 elif req == "Levioso":
                     self.location_rules[location.name] = self.has_levioso
                 elif req == "Incendio":
                     self.location_rules[location.name] = self.has_incendio
+                elif req == "Reparo":
+                    self.location_rules[location.name] = self.has_reparo
 
     def has_full_map_requirements(self, state: CollectionState) -> bool:
         return state.has_all(["Levioso", "Accio", "Reparo", "Ancient Magic Throw", "Ancient Magic"], self.player)
@@ -72,9 +72,6 @@ class HogwartsLegacyRules:
     def has_alohomora_three(self, state: CollectionState) -> bool:
         return state.has("Progressive Alohomora", self.player, 3)
 
-    def has_lumos(self, state: CollectionState) -> bool:
-        return state.has("Lumos", self.player)
-
     def has_accio(self, state: CollectionState) -> bool:
         return state.has("Accio", self.player)
 
@@ -83,6 +80,9 @@ class HogwartsLegacyRules:
 
     def has_incendio(self, state: CollectionState) -> bool:
         return state.has("Incendio", self.player)
+
+    def has_reparo(self, state: CollectionState) -> bool:
+        return state.has("Reparo", self.player)
 
     def has_final_repository_requirements(self, state: CollectionState) -> bool:
         return state.has("Final Item", self.player, 1)
