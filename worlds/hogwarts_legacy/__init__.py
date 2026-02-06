@@ -5,7 +5,7 @@ from worlds.AutoWorld import WebWorld, World
 from worlds.hogwarts_legacy import Rules
 from worlds.hogwarts_legacy.Items import spells, goal_items, key_items, non_required_quest_items, potion_recipes_items, \
     seed_items, filler_items, base_id, HogwartsLegacyItem, ItemDict, is_progression
-from worlds.hogwarts_legacy.Locations import world_locations, regions_to_locations
+from worlds.hogwarts_legacy.Locations import world_locations, regions_to_locations, early_locations
 from worlds.hogwarts_legacy.Options import HogwartsLegacyOptions
 from worlds.hogwarts_legacy.Regions import hogwarts_regions_all
 from worlds.hogwarts_legacy.Rules import HogwartsLegacyRules
@@ -39,7 +39,7 @@ class HogwartsLegacyWorld(World):
     all_items = (spells + goal_items + key_items + non_required_quest_items
                  + potion_recipes_items + seed_items + filler_items)
     item_name_to_id = {item["name"]: i + base_id for i, item in enumerate(all_items)}
-    all_locations = [loc.name for loc in world_locations]
+    all_locations = [loc.name for loc in world_locations] + [loc.name for loc in early_locations]
     location_name_to_id = {location: i + base_id for i, location in enumerate(all_locations)}
 
     def generate_early(self) -> None:
