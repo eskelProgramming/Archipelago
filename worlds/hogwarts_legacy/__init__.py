@@ -12,7 +12,7 @@ from worlds.hogwarts_legacy.Rules import HogwartsLegacyRules
 
 
 class HogwartsWeb(WebWorld):
-    theme = "party"
+    theme = "partyTime"
 
     guide_en = Tutorial(
         "Multiworld Setup Guide",

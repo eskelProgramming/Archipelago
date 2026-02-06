@@ -1445,6 +1445,7 @@ early_locations: List[HogwartsLegacyLocationInfo] = [
 ]
 
 regions_to_locations: Dict[str, List[str]] = {
+    "Menu": [],
     "Full Map": [loc.name for loc in world_locations],
     "Early Hogwarts": [loc.name for loc in early_locations]
 }
